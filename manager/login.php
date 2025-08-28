@@ -25,7 +25,7 @@
 
         // Phân quyền và điều hướng
         if ($user['role'] == 'admin') {
-            header('Location: ../admin/dashboad.php'); 
+            header('Location: ../admin/dashboard.php'); 
         } else {
             header('Location:../index.php'); 
         }
