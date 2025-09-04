@@ -63,7 +63,7 @@
   <footer>
     <div class="footer-container">
       <div class="footer-col about">
-        <img src="pic\logo.png" alt="Logo" />
+        <img src="../pic/logo.png" alt="Logo" />
         <p>
           Maple Pilates không chỉ là nơi tập luyện Pilates đẳng cấp nhất về
           <b>CHẤT LƯỢNG</b> mà còn hướng tới mục tiêu đào tạo ra các HLV Pilates

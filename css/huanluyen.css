@@ -1,0 +1,177 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+  line-height: 1.6;
+}
+
+.banner {
+  background: linear-gradient(135deg, #b87c63, #f2e3dc);
+  color: #fff;
+  text-align: center;
+  padding: 80px 20px;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.team-photo {
+  text-align: center;
+  margin: 40px 0;
+}
+.team-photo img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+.trainer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+.trainer-card {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+}
+.trainer-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.trainer-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.trainer-info {
+  padding: 20px;
+}
+.trainer-quote {
+  font-size: 14px;
+  color: #777;
+  font-style: italic;
+  margin-bottom: 12px;
+}
+.trainer-name {
+  display: inline-block;
+  background: #f1e3dc;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #444;
+}
+.trainer-info ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+.trainer-info ul li {
+  margin-bottom: 6px;
+  padding-left: 18px;
+  position: relative;
+}
+.trainer-info ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #b87c63;
+  font-size: 12px;
+}
+.detail-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background: #b87c63;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.detail-btn:hover {
+  background: #9c614d;
+}
+@media (max-width: 1024px) {
+  .trainer-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .trainer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.modal-content {
+  background: #fff;
+  border-radius: 16px;
+  max-width: 700px;
+  width: 100%;
+  padding: 24px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+@keyframes fadeIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.modal-content img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.modal-content h2 {
+  margin: 0 0 12px;
+  color: #444;
+}
+.modal-content p {
+  margin: 6px 0;
+  color: #555;
+}
+.close {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #666;
+  cursor: pointer;
+}
+.close:hover {
+  color: #000;
+}

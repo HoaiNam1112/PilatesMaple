@@ -98,7 +98,7 @@
     <header>
       <nav class="navbar-header">
         <div class="logo">
-          <img src="pic\logo.png" alt="Logo" />
+          <img src="../pic/logo.png" alt="Logo" />
         </div>
 
         <ul class="menu-center">
