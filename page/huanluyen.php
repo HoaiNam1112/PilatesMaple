@@ -16,8 +16,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         background: #fafafa;
         color: #333;
       }
-
-      /* Banner */
       .banner {
         background: linear-gradient(135deg, #d8a58a, #f2e3dc);
         color: #fff;
@@ -31,8 +29,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         letter-spacing: 2px;
         font-weight: bold;
       }
-
-      /* Hình chụp chung */
       .team-photo {
         text-align: center;
         margin: 40px 0;
@@ -42,8 +38,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         border-radius: 20px;
         box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
       }
-
-      /* Grid layout HLV */
       .trainer-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -52,8 +46,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         max-width: 1200px;
         margin: auto;
       }
-
-      /* Card */
       .trainer-card {
         background: #fff;
         border-radius: 20px;
@@ -111,8 +103,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         color: #b87c63;
         font-size: 12px;
       }
-
-      /* Responsive */
       @media (max-width: 1024px) {
         .trainer-grid {
           grid-template-columns: repeat(2, 1fr);
@@ -123,8 +113,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           grid-template-columns: 1fr;
         }
       }
-
-      /* Popup */
       .modal {
         display: none;
         position: fixed;
@@ -185,17 +173,14 @@ mysqli_set_charset($conn, 'UTF8'); ?>
     </style>
   </head>
   <body>
-    <!-- Banner -->
     <div class="banner">
       <h1>Đội Ngũ Huấn Luyện Viên Maple Pilates</h1>
     </div>
 
-    <!-- Hình chụp chung -->
     <div class="team-photo">
       <img src="team.jpg" alt="Đội ngũ huấn luyện viên Maple Pilates" />
     </div>
 
-    <!-- Danh sách HLV -->
     <div class="trainer-grid">
       <div class="trainer-card" onclick="openModal('haiyen')">
         <img src="haiyen.jpg" alt="HLV Hải Yến" />
@@ -235,8 +220,6 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         </div>
       </div>
     </div>
-
-    <!-- Modal -->
     <div id="modal-haiyen" class="modal">
       <div class="modal-content">
         <span class="close-btn" onclick="closeModal('haiyen')">&times;</span>
