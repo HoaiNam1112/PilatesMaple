@@ -113,7 +113,7 @@
           </li>
           <li><a href="#">LỊCH HỌC ▾</a></li>
           <li><a href="#">BÀI VIẾT</a></li>
-          <li><a href="#">LIÊN HỆ</a></li>
+          <li><a href="lienhe.php">LIÊN HỆ</a></li>
         </ul>
         <ul class="menu-right">
           <li><a href="#">ĐĂNG NHẬP</a></li>
