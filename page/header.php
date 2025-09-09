@@ -8,6 +8,7 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
+        padding-top: 120px;
       }
 
       header {
@@ -16,13 +17,15 @@
         position: sticky;
         top: 0;
         z-index: 1000;
+        overflow: visible;
       }
 
       .navbar-header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 15px 40px;
+        padding: 12px 28px;
+         overflow: visible;
       }
 
       .logo img {
@@ -42,6 +45,7 @@
       .menu-center li {
         margin: 0 15px;
         position: relative;
+        
       }
 
       .menu-center li a {
@@ -64,7 +68,7 @@
         list-style: none;
         padding: 10px;
         min-width: 160px;
-        z-index: 999;
+        z-index: 2000;
       }
 
       .menu-center ul li {
@@ -102,16 +106,21 @@
         </div>
 
         <ul class="menu-center">
-          <li><a href="#">TRANG CHỦ</a></li>
+          <li><a href="home.php">TRANG CHỦ</a></li>
           <li>
             <a href="#">GIỚI THIỆU ▾</a>
             <ul>
               <li><a href="#">Về Maple</a></li>
               <li><a href="#">Các dịch vụ</a></li>
-              <li><a href="#">Đội ngũ huấn luyện viên</a></li>
+              <li><a href="trainer.php">Đội ngũ huấn luyện viên</a></li>
             </ul>
           </li>
-          <li><a href="#">LỊCH HỌC ▾</a></li>
+          <li><a href="#">LỊCH HỌC ▾</a>
+          <ul>
+              <li><a href="schedule.php">Lịch học tại Maple</a></li>
+              <li><a href="#">Trình độ các lớp tập</a></li>
+          </ul>
+          </li>
           <li><a href="#">BÀI VIẾT</a></li>
           <li><a href="#">LIÊN HỆ</a></li>
         </ul>

@@ -3,11 +3,10 @@ body {
   margin: 0;
   background: #fafafa;
   color: #333;
-  line-height: 1.6;
 }
 
 .banner {
-  background: linear-gradient(135deg, #b87c63, #f2e3dc);
+  background: linear-gradient(135deg, #d8a58a, #f2e3dc);
   color: #fff;
   text-align: center;
   padding: 80px 20px;
@@ -29,20 +28,24 @@ body {
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
+
 .trainer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 28px;
   padding: 40px;
   max-width: 1200px;
   margin: auto;
+  box-sizing: border-box;
 }
+
 .trainer-card {
   background: #fff;
   border-radius: 20px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
 }
@@ -58,12 +61,6 @@ body {
 .trainer-info {
   padding: 20px;
 }
-.trainer-quote {
-  font-size: 14px;
-  color: #777;
-  font-style: italic;
-  margin-bottom: 12px;
-}
 .trainer-name {
   display: inline-block;
   background: #f1e3dc;
@@ -71,51 +68,44 @@ body {
   border-radius: 6px;
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   color: #444;
 }
-.trainer-info ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-  font-size: 14px;
-  color: #555;
-}
-.trainer-info ul li {
-  margin-bottom: 6px;
-  padding-left: 18px;
-  position: relative;
-}
-.trainer-info ul li::before {
-  content: "✔";
-  position: absolute;
-  left: 0;
-  color: #b87c63;
-  font-size: 12px;
-}
-.detail-btn {
-  display: inline-block;
-  margin-top: 12px;
-  padding: 8px 16px;
+
+.trainer-card .detail-btn {
+  margin-top: 10px;
   background: #b87c63;
   color: #fff;
   border: none;
+  padding: 8px 14px;
   border-radius: 6px;
   cursor: pointer;
+  font-size: 14px;
   transition: background 0.3s;
 }
-.detail-btn:hover {
-  background: #9c614d;
+.trainer-card .detail-btn:hover {
+  background: #a06550;
 }
-@media (max-width: 1024px) {
-  .trainer-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+.static-card {
+  border: 2px solid #f2e3dc;
+  cursor: default;
 }
-@media (max-width: 768px) {
-  .trainer-grid {
-    grid-template-columns: 1fr;
-  }
+.static-card:hover {
+  transform: none;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+.static-card .trainer-info {
+  text-align: center;
+  padding: 16px;
+}
+.static-card .trainer-name {
+  background: #e8d6ce;
+  color: #333;
+}
+.static-card p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #666;
 }
 .modal {
   display: none;
@@ -138,7 +128,6 @@ body {
   padding: 24px;
   position: relative;
   animation: fadeIn 0.3s ease-in-out;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
 }
 @keyframes fadeIn {
   from {
@@ -151,13 +140,17 @@ body {
   }
 }
 .modal-content img {
-  width: 100%;
-  border-radius: 12px;
-  margin-bottom: 20px;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 16px;
 }
 .modal-content h2 {
   margin: 0 0 12px;
   color: #444;
+  text-align: center;
 }
 .modal-content p {
   margin: 6px 0;
