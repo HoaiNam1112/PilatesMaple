@@ -62,6 +62,28 @@
                 padding-left: 15px;
                 padding-top: 20px;
             }
+        
+       
+        .banner {
+        background: linear-gradient(135deg, #d8a58a, #f2e3dc);
+        color: #fff;
+        text-align: center;
+        padding: 80px 20px;
+      }
+      .banner h1 {
+        margin: 0;
+        font-size: 42px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: bold;
+      }
+        
+        .search-container {
+            background: white;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
     </style>
 </head>

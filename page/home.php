@@ -179,6 +179,111 @@ mysqli_set_charset($conn, 'UTF8'); ?>
   background: #f57c00;
 }
 
+.flipbox-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  margin: 40px auto;
+}
+
+.pp-flipbox {
+  width: 240px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.pp-flipbox-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s ease;
+  transform-style: preserve-3d;
+}
+
+.pp-flipbox:hover .pp-flipbox-inner {
+  transform: rotateY(180deg);
+}
+
+.pp-flipbox-front, .pp-flipbox-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.pp-flipbox-front {
+  background: #fff;
+}
+
+.pp-flipbox-front img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.pp-flipbox-front .title {
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pp-flipbox-back {
+  background-color: #222;
+  color: #fff;
+  transform: rotateY(180deg);
+  padding: 20px;
+  justify-content: center;
+}
+
+.pp-flipbox-back h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.pp-flipbox-back p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.pp-flipbox-back a {
+  margin-top: 12px;
+  color: #f57c00;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .pp-flipbox {
+    width: 160px;
+    height: 240px;
+  }
+
+  .pp-flipbox-front img {
+    height: 160px;
+  }
+
+  .pp-flipbox-front .title {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .pp-flipbox-back {
+    padding: 15px;
+    font-size: 12px;
+  }
+}
+
+
 
   </style>
 </head>
@@ -360,6 +465,69 @@ mysqli_set_charset($conn, 'UTF8'); ?>
 </script>
 
 <div class="class-footer">Các Lớp Học </div>
+
+<div class="flipbox-container">
+  <!-- Flipbox 1: Yoga Thảm -->
+  <div class="pp-flipbox">
+    <div class="pp-flipbox-inner">
+      <div class="pp-flipbox-front">
+        <img src="../pic/yoga_thảm.jpg" alt="Yoga Thảm">
+        <h3>YOGA THẢM</h3>
+      </div>
+      <div class="pp-flipbox-back">
+        <h3>YOGA THẢM</h3>
+        <p>Lớp Yoga tập trung vào việc thực hành các tư thế Yoga truyền thống, phương pháp thở và sự chú tâm.</p>
+        <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flipbox 2: Yoga Bay -->
+  <div class="pp-flipbox">
+    <div class="pp-flipbox-inner">
+      <div class="pp-flipbox-front">
+        <img src="../pic/yoga_bay.png" alt="Yoga Bay">
+        <h3>YOGA BAY</h3>
+      </div>
+      <div class="pp-flipbox-back">
+        <h3>YOGA BAY</h3>
+        <p>
+						Yoga Bay là các động tác Yoga được ứng dụng cùng dải dây lụa được treo lên từ độ cao khoảng 3m. </p>
+        <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flipbox 3: Pilates Thảm -->
+  <div class="pp-flipbox">
+    <div class="pp-flipbox-inner">
+      <div class="pp-flipbox-front">
+        <img src="../pic/phamhuong.jpg" alt="Pilates Thảm">
+        <h3>PILATES THẢM</h3>
+      </div>
+      <div class="pp-flipbox-back">
+        <h3>PILATES THẢM</h3>
+        <p>	Các lớp Pilates tập trung vào sự phối hợp của toàn bộ cơ thể. </p>
+        <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Flipbox 4: Pilates Reformer -->
+  <div class="pp-flipbox">
+    <div class="pp-flipbox-inner">
+      <div class="pp-flipbox-front">
+        <img src="../pic/pilates.jpg" alt="Pilates Reformer">
+        <h3>PILATES REFORMER</h3>
+      </div>
+      <div class="pp-flipbox-back">
+        <h3>PILATES REFORMER</h3>
+        <p>Các lớp Pilates kết hợp sử dụng máy Pilates Reformer. </p>
+        <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
