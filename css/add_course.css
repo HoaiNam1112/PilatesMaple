@@ -1,0 +1,26 @@
+body {
+  font-family: Arial;
+  background: #f4f7fa;
+}
+.container {
+  width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+input, textarea, button {
+  width: 100%;
+  margin: 8px 0;
+  padding: 8px;
+}
+.btn {
+  background: #232a3f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.back {
+  display: inline-block;
+  margin-top: 10px;
+}
