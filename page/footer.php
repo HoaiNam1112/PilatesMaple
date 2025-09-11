@@ -6,61 +6,93 @@
     <title>Pilates Website</title>
     <style>
       footer {
-        background: #fff;
-        padding: 50px 80px;
-        font-family: Arial, sans-serif;
-      }
+  background-image: url('../pic/thiennhien.jpg'); /* ảnh nền */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 80px 60px; /* tăng khoảng cách trên */
+  font-family: Arial, sans-serif;
+  position: relative;
+  color: white;
+  margin-top: 80px; /* tạo khoảng cách với phần body phía trên */
+  min-height: 500px; /* tăng chiều cao ảnh nền */
+}
 
-      .footer-container {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
-        gap: 40px;
-        align-items: start;
-      }
+/* lớp phủ mờ dần từ trắng xuống ảnh */
+footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
+  z-index: 1;
+}
 
-      .footer-col h4 {
-        font-size: 16px;
-        margin-bottom: 15px;
-        border-bottom: 1px solid #aaa;
-        display: inline-block;
-        padding-bottom: 5px;
-        font-weight: bold;
-      }
+/* nội dung đè lên ảnh */
+.footer-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  align-items: start;
+}
 
-      .footer-col ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+/* tiêu đề cột */
+.footer-col h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ccc;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #0f0f0fff;
+}
 
-      .footer-col ul li {
-        margin-bottom: 8px;
-      }
+/* danh sách liên kết */
+.footer-col ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
 
-      .footer-col ul li a {
-        text-decoration: none;
-        color: #333;
-        font-size: 14px;
-        transition: color 0.3s;
-      }
+.footer-col ul li {
+  margin-bottom: 8px;
+}
 
-      .footer-col ul li a:hover {
-        color: #0a7f46;
-      }
+.footer-col ul li a {
+  text-decoration: none;
+  color: #0f0f0fff;
+  font-size: 14px;
+  transition: color 0.3s;
+}
 
-      .about img {
-        width: 80px;
-        margin-bottom: 15px;
-      }
+.footer-col ul li a:hover {
+  color: #0a7f46;
+}
 
-      .about p {
-        font-size: 14px;
-        line-height: 1.6;
-        color: #555;
-      }
+/* logo và mô tả */
+.about img {
+  width: 80px;
+  margin-bottom: 15px;
+}
+
+.about p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0f0f0fff;
+}
+
+/* xóa phần ảnh riêng nếu dùng ảnh nền */
+.footer-banner {
+  display: none;
+}
+
     </style>
   </head>
   <footer>
+    <div class="footer-banner">
+  <img src="../pic/thiennhien.jpg" alt="Footer Banner" />
+</div>
+
     <div class="footer-container">
       <div class="footer-col about">
         <img src="../pic/logo.png" alt="Logo" />
