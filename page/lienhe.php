@@ -10,11 +10,15 @@
 </head>
 <style>
     .banner {
-        background: linear-gradient(135deg, #d8a58a, #f2e3dc);
-        color: #fff;
-        text-align: center;
-        padding: 80px 20px;
-      }
+  background-color: #e0e0e0; /* màu xám nhạt */
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 40px 0;
+  color: #333;
+  letter-spacing: 2px;
+}
+
       .banner h1 {
         margin: 0;
         font-size: 42px;
@@ -23,12 +27,12 @@
         font-weight: bold;
       }
       .btn-primary {
-    background-color:#d8a58a;
+    background-color: #333;
     border-color:  #fff;
 }
 
 .btn-primary:hover {
-    background-color:#d8a58a;
+    background-color: #333;
     border-color:  #fff;
 }
       
@@ -44,7 +48,7 @@
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h2 class="card-title h4 border-bottom pb-2">
-                            <i class="fas fa-envelope me-2 "style="color:#d8a58a;"></i>Đăng Ký Nhận Thông Tin
+                            <i class="fas fa-envelope me-2 "style="  color: #333;"></i>Đăng Ký Nhận Thông Tin
                         </h2>
                         <form id="registrationForm" class="mt-3">
                             <div class="mb-3">
@@ -78,7 +82,7 @@
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h2 class="card-title h4 border-bottom pb-2">
-                            <i class="fas fa-phone-alt me-2" style="color: #d8a58a;"></i>Liên Hệ Với Chúng Tôi
+                            <i class="fas fa-phone-alt me-2" style="  color: #333;"></i>Liên Hệ Với Chúng Tôi
                         </h2>
                         <form id="contactForm" class="mt-3">
                             <div class="mb-3">
