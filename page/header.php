@@ -8,7 +8,6 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        padding-top: 120px;
       }
 
       header {
@@ -111,17 +110,16 @@
             <a href="#">GIỚI THIỆU ▾</a>
             <ul>
               <li><a href="#">Về Maple</a></li>
-              <li><a href="#">Các dịch vụ</a></li>
               <li><a href="trainer.php">Đội ngũ huấn luyện viên</a></li>
             </ul>
           </li>
           <li><a href="#">LỊCH HỌC ▾</a>
           <ul>
               <li><a href="schedule.php">Lịch học tại Maple</a></li>
-              <li><a href="#">Trình độ các lớp tập</a></li>
+              <li><a href="levels.php">Trình độ các lớp tập</a></li>
           </ul>
           </li>
-          <li><a href="#">BÀI VIẾT</a></li>
+          <li><a href="baiviet.php">BÀI VIẾT</a></li>
           <li><a href="#">LIÊN HỆ</a></li>
         </ul>
         <ul class="menu-right">
