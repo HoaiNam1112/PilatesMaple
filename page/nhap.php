@@ -128,7 +128,7 @@ $result = $conn->query($sql);
                 <div class="card-body">
                     <h5 class="card-title">'.$row['name'].'</h5>
                     <p class="card-text">'.mb_substr($row['noidung'], 0, 100).'...</p>
-                    <a href="baiviet'.$row['id'].'.php" class="btn btn-primary">Xem chi tiết</a>
+                    <a href="baiviet.php?id='.$row['id'].'" class="btn btn-primary">Xem chi tiết</a>
                 </div>
                 </div>
                 </div>
