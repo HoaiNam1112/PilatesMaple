@@ -94,7 +94,7 @@
                 <div class="search-box">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="Search">
-                        <button class="btn btn-outline-primary" type="button">Search</button>
+                        <button class="btn btn-outline-primary" type="button">search</button>
                     </div>
                 </div>
                 <div class="sidebar">
@@ -121,7 +121,7 @@
                             <a href="baiviet1.php" class="card-link">
                                 <h4>Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</h4>
                             </a>
-                            <p>Việc lựa chọn thời điểm tập Pilates phù hợp sẽ giúp bạn tối ưu hóa hiệu quả tập luyện và...</p>
+                            <p>Việc lựa chọn thời điểm tập Pilates phù hợp sẽ giúp bạn tối ưu hóa hiệu quả tập luyện và.</p>
                             
                         </div>
                     </div>
@@ -134,7 +134,7 @@
                             <a href="baiviet2.php" class="card-link">
                                 <h4>Vì sao dân văn phòng nên tập Pilates? [Chuyên gia giải đáp]</h4>
                             </a>
-                            <p>Vì sao dân văn phòng nên tập Pilates là câu hỏi được nhiều người quan tâm khi muốn tìm giải...</p>
+                            <p>Vì sao dân văn phòng nên tập Pilates là câu hỏi được nhiều người quan tâm khi muốn tìm giải.</p>
                             
                         </div>
                     </div>
@@ -148,7 +148,7 @@
                                 <h4>Một buổi đào tạo HLV pilates diễn ra thế nào?</h4>
                             </a>
                             
-                            <p>Một buổi đào tạo HLV Pilates diễn ra thế nào là thắc mắc của nhiều người khi muốn theo đuổi...</p>
+                            <p>Một buổi đào tạo HLV Pilates diễn ra thế nào là thắc mắc của nhiều người khi muốn theo đuổi.</p>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
@@ -161,7 +161,7 @@
                                 <h4>Mất bao lâu để trở thành huấn luyện viên Pilates?</h4>
                             </a>
                             
-                            <p>Trở thành huấn luyện viên Pilates đang là xu hướng được nhiều người quan tâm, đặc biệt trong...</p>
+                            <p>Trở thành huấn luyện viên Pilates đang là xu hướng được nhiều người quan tâm, đặc biệt trong.</p>
                             
                         </div>
                     </div>
@@ -175,7 +175,7 @@
                                 <h4>Những sai lầm cần tránh khi luyện tập Pilates</h4>
                             </a>
                             
-                            <p>Khi mới bắt đầu tập Pilates, nhiều người thường mắc phải những sai lầm cơ bản làm giảm hiệu quả...</p>
+                            <p>Khi mới bắt đầu tập Pilates, nhiều người thường mắc phải những sai lầm cơ bản làm giảm hiệu quả.</p>
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
@@ -188,7 +188,7 @@
                                 <h4>Lợi ích của Pilates đối với sức khỏe tinh thần</h4>
                             </a>
                             
-                            <p>Ngoài những lợi ích về thể chất, Pilates còn mang lại nhiều tác động tích cực đến sức khỏe tinh thần...</p>
+                            <p>Ngoài những lợi ích về thể chất, Pilates còn mang lại nhiều tác động tích cực đến sức khỏe tinh thần.</p>
                         </div>
                     </div>
                 </div>

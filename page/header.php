@@ -121,7 +121,7 @@
               <li><a href="#">Trình độ các lớp tập</a></li>
           </ul>
           </li>
-          <li><a href="#">BÀI VIẾT</a></li>
+          <li><a href="baiviet.php">BÀI VIẾT</a></li>
           <li><a href="lienhe.php">LIÊN HỆ</a></li>
         </ul>
         <ul class="menu-right">
