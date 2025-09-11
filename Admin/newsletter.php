@@ -32,7 +32,6 @@ $result = $conn->query($sql);
     <table class="table table-bordered table-hover">
       <thead class="table-dark">
         <tr>
-          <th>ID</th>
           <th>Tên</th>
           <th>Email</th>
           <th>Ngày đăng ký</th>
@@ -44,7 +43,6 @@ $result = $conn->query($sql);
       <?php if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) { ?>
             <tr>
-              <td><?= $row['subscription_id'] ?></td>
               <td><?= htmlspecialchars($row['name']) ?></td>
               <td><?= htmlspecialchars($row['email']) ?></td>
               <td><?= $row['subscribe_date'] ?></td>
