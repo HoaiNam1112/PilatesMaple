@@ -15,12 +15,15 @@ mysqli_set_charset($conn, 'UTF8'); ?>
   <title>Paragate Pilates</title>
   <style>
     .slider {
-      position: relative;
-      width: 100%;
-      max-width: 1600px;
-      margin: auto;
-      overflow: hidden;
-    }
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* Giới hạn chiều rộng để không tràn */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
 
     .slides {
       display: flex;
@@ -33,64 +36,75 @@ mysqli_set_charset($conn, 'UTF8'); ?>
     }
 
     .slide img {
-      width: 100%;
-      height: 500px;
-      /* Đặt chiều cao banner cố định */
-      object-fit: cover;
-      /* Crop ảnh cho đẹp */
-      display: block;
-    }
+  width: 100%;
+  height: auto;
+  max-height: 600px; /* Tăng chiều cao nếu muốn ảnh to hơn */
+  object-fit: cover;
+  display: block;
+}
+
 
     /* Nút mũi tên */
     .arrow {
-      position: absolute;
-      top: 50%;
-      /* căn giữa theo chiều cao slider */
-      transform: translateY(-50%);
-      /* dịch đúng giữa */
-      background: rgba(0, 0, 0, 0.5);
-      color: #fff;
-      border: none;
-      font-size: 30px;
-      padding: 10px;
-      cursor: pointer;
-      border-radius: 50%;
-      z-index: 10;
-    }
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  font-size: 30px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
 
-    .arrow.left {
-      left: 20px;
-    }
+.arrow.left {
+  left: 30px;
+}
 
-    .arrow.right {
-      right: 20px;
-    }
+.arrow.right {
+  right: 30px;
+}
+
+
+    
   .class-section {
   display: flex;
-  width: 100%;
-  max-width: 1600px;
+  justify-content: center;     /* Căn giữa toàn bộ */
+  gap: 20px;                   /* Khoảng cách giữa 2 ảnh */
   margin: 50px auto;
-  gap: 20px;
+  flex-wrap: wrap;             /* Đảm bảo responsive nếu cần */
 }
 
 .class-box {
   position: relative;
-  width: 50%;
+  width: 400px;
+  height: 300px;               /* Hình vuông */
   overflow: hidden;
   cursor: pointer;
   border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Đổ bóng nhẹ */
 }
 
 .class-box img {
   width: 100%;
-  height: 400px;
+  height: 100%;
   object-fit: cover;
   transition: transform 0.6s ease;
+  border-radius: 10px;
 }
 
 .class-box:hover img {
-  transform: scale(1.1); /* Zoom nhẹ khi hover */
+  transform: scale(1.55); /* Zoom nhẹ khi hover */
 }
+@media (max-width: 768px) {
+  .class-box {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 
 .label {
   position: absolute;
@@ -103,13 +117,13 @@ mysqli_set_charset($conn, 'UTF8'); ?>
 }
 
 .class-footer {
-  background-color: #e0e0e0; /* màu xám nhạt */
+  background-color: #f9f3f3ff; /* màu xám nhạt */
   text-align: center;
-  font-size: 2.5em;
+  font-size: 1.85em;
   font-weight: bold;
   padding: 40px 0;
   margin-top: 50px;
-  color: #333;
+  color: #2e2b2bff;
   letter-spacing: 2px;
 }
 
@@ -282,6 +296,70 @@ mysqli_set_charset($conn, 'UTF8'); ?>
     font-size: 12px;
   }
 }
+
+.teacher-section {
+  max-width: 1000px;
+  margin: 60px auto;
+  padding: 0 20px;
+}
+
+.teacher-header h3 {
+  font-size: 1.6em;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.teacher-scroll-box {
+  max-height: 600px; /* chiều cao khung cuộn */
+  overflow-y: auto;
+  padding-right: 10px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+
+.teacher-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  padding: 20px;
+}
+
+.teacher-card {
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, opacity 0.6s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.teacher-card img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+.teacher-scroll-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.teacher-scroll-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -528,6 +606,82 @@ mysqli_set_charset($conn, 'UTF8'); ?>
     </div>
   </div>
 </div>
+
+<div class="class-footer">Đội Ngũ Giáo Viên </div>
+
+<section class="teacher-section">
+  <div class="teacher-header">
+    <h3>ĐỘI NGŨ GIÁO VIÊN &gt;&gt;</h3>
+  </div>
+
+  <div class="teacher-grid">
+    <div class="teacher-card"><img src="../pic/huong.png" alt="Đỗ Thị Hương"></div>
+    <div class="teacher-card"><img src="../pic/haiyen.png" alt="Hải Yến"></div>
+    <div class="teacher-card"><img src="../pic/minhtrang.png" alt="Minh Trang"></div>
+    <div class="teacher-card"><img src="../pic/ngocthuy.png" alt="Ngọc Thúy"></div>
+    <div class="teacher-card"><img src="../pic/nga.png" alt="Nga Yopi"></div>
+    <div class="teacher-card"><img src="../pic/phamhuong.png" alt="Phạm Hướng"></div>
+    <!-- Thêm bao nhiêu ảnh tùy bạn -->
+  </div>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const hiddenCards = document.querySelectorAll('.teacher-card.hidden');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('hidden');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.2
+    });
+
+    hiddenCards.forEach(card => observer.observe(card));
+  });
+</script>
+</section>
+
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const container = document.querySelector('.teacher-scroll-box');
+    const cards = container.querySelectorAll('.teacher-card');
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = 1;
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: container,p
+      threshold: 0.2
+    });
+
+    cards.forEach(card => {
+      card.style.opacity = 0;
+      card.style.transform = 'translateY(40px)';
+      observer.observe(card);
+    });
+  });
+</script>
+
+
+
+
+
+
+  
+
+
+
+
+
+
 
 
 
