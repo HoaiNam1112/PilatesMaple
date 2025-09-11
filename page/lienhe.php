@@ -17,9 +17,8 @@
   padding: 40px 0;
   color: #333;
   letter-spacing: 2px;
-}
-
-      .banner h1 {
+}   
+   .banner h1 {
         margin: 0;
         font-size: 42px;
         text-transform: uppercase;
@@ -40,7 +39,7 @@
 
 <body class="bg-light">
     
-        <h1 class="banner text-center mb-4)">Kết Nối Với Chúng Tôi</h1>
+        <h1 class="banner text-center mb-4">Kết Nối Với Chúng Tôi</h1>
         <div class="container my-5">
         <div class="row justify-content-center">
             <!-- Form Đăng Ký -->
@@ -50,7 +49,7 @@
                         <h2 class="card-title h4 border-bottom pb-2">
                             <i class="fas fa-envelope me-2 "style="  color: #333;"></i>Đăng Ký Nhận Thông Tin
                         </h2>
-                        <form id="registrationForm" class="mt-3">
+                        <form method="post" id="registrationForm" class="mt-3">
                             <div class="mb-3">
                                 <label for="regEmail" class="form-label">Email <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="regEmail" name="email" placeholder="email@example.com">
@@ -73,6 +72,7 @@
                                 <i class="fas fa-check-circle me-2"></i> Cảm ơn bạn đã đăng ký! Chúng tôi sẽ gửi thông tin mới nhất đến bạn.
                             </div>
                         </form>
+                        
                     </div>
                 </div>
             </div>
