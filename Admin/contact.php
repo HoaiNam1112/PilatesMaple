@@ -27,7 +27,6 @@ $result = $conn->query($sql);
     <table class="table table-bordered table-hover">
       <thead class="table-dark">
         <tr>
-          <th>ID</th>
           <th>Họ tên</th>
           <th>Email</th>
           <th>Tin nhắn</th>
@@ -39,7 +38,6 @@ $result = $conn->query($sql);
       <?php if ($result->num_rows > 0) {
           while($row = $result->fetch_assoc()) { ?>
             <tr class="<?= $row['status'] == 'new' ? 'table-warning' : '' ?>">
-              <td><?= $row['contact_id'] ?></td>
               <td><?= htmlspecialchars($row['name']) ?></td>
               <td><?= htmlspecialchars($row['email']) ?></td>
               <td><?= htmlspecialchars($row['message']) ?></td>
