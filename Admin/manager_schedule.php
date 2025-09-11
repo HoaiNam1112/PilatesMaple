@@ -25,7 +25,7 @@ $result = mysqli_query($conn, "SELECT * FROM schedules ORDER BY id DESC");
           <th>Lớp</th>
           <th>Huấn luyện viên</th>
           <th>Trình độ</th>
-          <th>Hành động</th>
+          <th>Chức năng</th>
         </tr>
       </thead>
       <tbody>
