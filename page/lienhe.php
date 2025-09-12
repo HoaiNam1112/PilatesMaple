@@ -42,15 +42,16 @@
         <h1 class="banner text-center mb-4">Kết Nối Với Chúng Tôi</h1>
         <div class="container my-5">
         <div class="row justify-content-center">
-            <!-- Form Đăng Ký -->
+         
             <div class="col-md-5 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h2 class="card-title h4 border-bottom pb-2">
                             <i class="fas fa-envelope me-2 "style="  color: #333;"></i>Đăng Ký Nhận Thông Tin
                         </h2>
-                           <!-- Hiển thị thông báo -->
-          <?php if (!empty($successMsg)): ?>
+                    ////?? chưa biết
+
+                        <?php if (!empty($successMsg)): ?>
             <div class="alert alert-success mt-3"><?= $successMsg ?></div>
           <?php endif; ?>
           <?php if (!empty($errorMsg)): ?>
@@ -116,7 +117,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register_submit"])) {
 }
 ?>
 
-            <!-- Form Liên Hệ -->
             <div class="col-md-5 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
@@ -178,7 +178,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
     }
 }
 ?>
-
+//cái này cx chưa biết
     <script>
         // Ẩn tất cả thông báo lỗi và thành công khi trang được tải
         document.addEventListener('DOMContentLoaded', function() {
