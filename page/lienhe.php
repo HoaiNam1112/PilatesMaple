@@ -42,75 +42,107 @@
         <h1 class="banner text-center mb-4">Kết Nối Với Chúng Tôi</h1>
         <div class="container my-5">
         <div class="row justify-content-center">
-            <!-- Form Đăng Ký -->
+         
             <div class="col-md-5 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h2 class="card-title h4 border-bottom pb-2">
                             <i class="fas fa-envelope me-2 "style="  color: #333;"></i>Đăng Ký Nhận Thông Tin
                         </h2>
-                        <form method="post" id="registrationForm" class="mt-3">
+                    ////?? chưa biết
+
+                        <?php if (!empty($successMsg)): ?>
+            <div class="alert alert-success mt-3"><?= $successMsg ?></div>
+          <?php endif; ?>
+          <?php if (!empty($errorMsg)): ?>
+            <div class="alert alert-danger mt-3"><?= $errorMsg ?></div>
+          <?php endif; ?>
+                        <form method="post" class="mt-3">
                             <div class="mb-3">
                                 <label for="regEmail" class="form-label">Email <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="regEmail" name="email" placeholder="email@example.com">
-                                <div class="text-danger small mt-1" id="regEmailError">Vui lòng nhập địa chỉ email hợp lệ</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="regFullname" class="form-label">Họ và tên <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="regFullname" name="fullname" placeholder="Nguyễn Văn A">
-                                <div class="text-danger small mt-1" id="regNameError">Vui lòng nhập họ và tên</div>
                             </div>
                             
                             <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" name="register_submit">
                                     <i class="fas fa-paper-plane me-2"></i> Đăng Ký Ngay
                                 </button>
-                            </div>
-                            
-                            <div class="alert alert-success mt-3" id="registrationSuccess">
-                                <i class="fas fa-check-circle me-2"></i> Cảm ơn bạn đã đăng ký! Chúng tôi sẽ gửi thông tin mới nhất đến bạn.
-                            </div>
+</div>
                         </form>
                         
                     </div>
                 </div>
             </div>
 
-            <!-- Form Liên Hệ -->
+<?php
+include 'connect.php';
+
+$successMsg = "";
+$errorMsg = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["register_submit"])) {
+    $email = trim($_POST["email"]);
+    $fullname = trim($_POST["fullname"]);
+
+    if (!empty($email) && !empty($fullname)) {
+        ///kiểm tra trùng mail
+        $check = $conn->prepare("SELECT subscription_id FROM newsletter_subscription WHERE email = ?");
+        $check->bind_param("s", $email);
+        $check->execute();
+        $check->store_result();
+
+        if ($check->num_rows > 0) {
+            $errorMsg = "Email này đã được đăng ký!";
+        } else {
+            $stmt = $conn->prepare("INSERT INTO newsletter_subscription (email, name) VALUES (?, ?)");
+            $stmt->bind_param("ss", $email, $fullname);
+
+            if ($stmt->execute()) {
+                $successMsg = "Cảm ơn bạn đã đăng ký! Chúng tôi sẽ gửi thông tin mới nhất đến bạn.";
+            } else {
+                $errorMsg = "Lỗi khi lưu dữ liệu: " . $conn->error;
+            }
+
+            $stmt->close();
+        }
+        $check->close();
+    } else {
+        $errorMsg = "Vui lòng nhập đầy đủ thông tin.";
+    }
+}
+?>
+
             <div class="col-md-5 mb-4">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
                         <h2 class="card-title h4 border-bottom pb-2">
                             <i class="fas fa-phone-alt me-2" style="  color: #333;"></i>Liên Hệ Với Chúng Tôi
                         </h2>
-                        <form id="contactForm" class="mt-3">
+                        <form method="post" class="mt-3">
                             <div class="mb-3">
                                 <label for="contactFullname" class="form-label">Họ và tên <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="contactFullname" name="fullname" placeholder="Nguyễn Văn A">
-                                <div class="text-danger small mt-1" id="contactNameError">Vui lòng nhập họ và tên</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="contactEmail" class="form-label">Email <span class="text-danger">*</span></label>
                                 <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@example.com">
-                                <div class="text-danger small mt-1" id="contactEmailError">Vui lòng nhập địa chỉ email hợp lệ</div>
                             </div>
 
                             <div class="mb-3">
                                 <label for="content" class="form-label">Nội dung liên hệ <span class="text-danger">*</span></label>
                                 <textarea class="form-control" id="content" name="content" rows="4" placeholder="Xin vui lòng mô tả chi tiết nội dung bạn cần hỗ trợ..."></textarea>
-                                <div class="text-danger small mt-1" id="contentError">Vui lòng nhập nội dung liên hệ</div>
                             </div>
 
                             <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-primary">
+                                <button type="submit" class="btn btn-primary" name="contact_form">
                                     <i class="fas fa-paper-plane me-2" ></i> Gửi Liên Hệ
                                 </button>
-                            </div>
-                            
-                            <div class="alert alert-success mt-3" id="contactSuccess">
-                                <i class="fas fa-check-circle me-2"></i> Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.
                             </div>
                         </form>
                     </div>
@@ -118,7 +150,35 @@
             </div>
         </div>
     </div>
+<?php
+include 'connect.php';
 
+$contactSuccess = "";
+$contactError = "";
+
+// Xử lý form liên hệ
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
+    $name    = trim($_POST["fullname"]);
+    $email   = trim($_POST["contactEmail"]);
+    $message = trim($_POST["content"]);
+
+    if (!empty($name) && !empty($email) && !empty($message)) {
+        $stmt = $conn->prepare("INSERT INTO contact_form (name, email, message) VALUES (?, ?, ?)");
+        $stmt->bind_param("sss", $name, $email, $message);
+
+        if ($stmt->execute()) {
+            $contactSuccess = "Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất có thể.";
+        } else {
+            $contactError = "Lỗi khi lưu dữ liệu: " . $conn->error;
+        }
+
+        $stmt->close();
+    } else {
+        $contactError = "Vui lòng nhập đầy đủ thông tin.";
+    }
+}
+?>
+//cái này cx chưa biết
     <script>
         // Ẩn tất cả thông báo lỗi và thành công khi trang được tải
         document.addEventListener('DOMContentLoaded', function() {
