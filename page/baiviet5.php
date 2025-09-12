@@ -13,6 +13,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-9 main-content">
+                <br>
                 <h4>Những sai lầm cần tránh khi luyện tập Pilates bạn cần biết</h4>
 
 <p>Luyện tập Pilates mang lại nhiều lợi ích vượt trội cho sức khỏe và vóc dáng, nhưng không ít người mắc phải các sai lầm khiến hiệu quả giảm sút hoặc gây chấn thương. Vậy những sai lầm cần tránh khi luyện tập Pilates để thực hiện đúng cách, an toàn và hiệu quả? Khám phá ngay bài viết của PĀRAGATE® để nhận lời khuyên hữu ích từ chuyên gia!</p>
@@ -46,21 +47,50 @@
 
             </div>
             <div class="col-md-3">
-                    <div class="search-box">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button class="btn btn-outline-primary" type="button">Search</button>
-                        </div>
-                    </div>
-                    <div class="sidebar">
-                        <h5>Recent Post</h5>
-                        <ul class="recent-posts">
-                            <li><a href="baiviet1.php" >Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</a></li>
-                            <li><a href="baiviet2.php">Vì sao dân văn phòng nên tập Pilates? [Chuyên gia giải đáp]</a></li>
-                            <li><a href="baiviet3.php">Một buổi đào tạo HLV pilates diễn ra thế nào?</a></li>
-                            <li><a href="baiviet4.php">Mất bao lâu để trở thành huấn luyện viên Pilates?</a ></li>
-                            <li><a href="baiviet5.php">Những sai lầm cần tránh khi luyện tập Pilates bạn cần biết.</a></li>
-                        </ul>
+            <form method="post">
+            <div class="search-box">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="noidung" placeholder="Search">
+                    <button class="btn btn-outline-primary" type="submit" name="btn">
+                        <img src="../pic/search1.png" 
+                            alt="search" 
+                            class="img-fluid" 
+                            style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+            </div>
+            </form>
+<?php   
+    include '../page/connect.php';
+    if (isset($_POST['btn'])) { 
+        $noidung = $_POST['noidung'];
+        $sqlSearch = "SELECT * FROM baivietdata WHERE name LIKE '%$noidung%' ";
+        $resultSearch = $conn->query($sqlSearch);
+
+        if ($resultSearch->num_rows > 0) {
+            echo '<div class="sidebar"><h5>Kết quả</h5><ul class="recent-posts">';
+            while($row = $resultSearch->fetch_assoc()) {
+                    
+                    echo '
+                    <li><a href="baiviet' . $row['id'] . '.php" >' . $row['name'] . '</a></li>
+                    ';
+            
+            }
+            echo '</ul></div>';
+        } else {
+            echo "Không tìm thấy kết quả nào.";
+        }
+    }
+?>
+                <div class="sidebar">
+                    <h5>Đề Xuất</h5>
+                    <ul class="recent-posts">
+                        <li><a href="baiviet1.php" >Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</a></li>
+                        <li><a href="baiviet2.php">Vì sao dân văn phòng nên tập Pilates? [chuyên gia giải đáp]</a></li>
+                        <li><a href="baiviet3.php">Một buổi đào tạo HLV pilates diễn ra thế nào?</a></li>
+                        <li><a href="baiviet4.php">Mất bao lâu để trở thành huấn luyện viên Pilates?</a ></li>
+                        <li><a href="baiviet5.php">Những sai lầm cần tránh khi luyện tập Pilates bạn cần biết.</a></li>
+                    </ul>
                     </div>
             </div>
         </div>

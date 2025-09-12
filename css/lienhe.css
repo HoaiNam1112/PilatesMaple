@@ -1,0 +1,16 @@
+.banner {
+  background-color: #e0e0e0; /* màu xám nhạt */
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 40px 0;
+  color: #333;
+  letter-spacing: 2px;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
