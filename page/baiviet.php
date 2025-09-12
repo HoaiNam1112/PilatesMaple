@@ -10,90 +10,16 @@ $result = $conn->query($sql);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>baiviet</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-        }
-        .search-box {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .sidebar {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            margin-bottom: 20px;
-        }
-        
-        .recent-posts  {
-            list-style: none;
-            padding: 0;
-        }
-        .recent-posts a {
-            text-decoration: none;
-            color: #000;
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-        .post-card {
-            margin-top: 10px;
-            background-color: white;
-            padding: 20px;
-            height: 100%;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-        }
-        .post-card:hover {
-            transform: translateY(-5px);
-        }
-        .post-category {
-            color: #6f42c1;
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-        .card-link {
-            text-decoration: none;
-            color: #000;
-        }
-      
-        .main-content {
-            padding-left: 30px;
-        }
-        @media (max-width: 768px) {
-            .main-content {
-                padding-left: 15px;
-                padding-top: 20px;
-            }
-        
-       
-       .banner {
-            background-color: #e0e0e0; /* màu xám nhạt */
-            text-align: center;
-            font-size: 2.5em;
-            font-weight: bold;
-            padding: 40px 0;
-            color: #333;
-            letter-spacing: 2px;
-            }
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/baiviet.css" />
 
-      .banner h1 {
-            margin: 0;
-            font-size: 42px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: bold;
-        }
-        
-         
-    </style>
 </head>
 <body>
+    <h1 class="banner ">Bài Viết</h1>
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
+        <div class="col-md-4">
         <form method="post">
         <div class="search-box">
             <div class="input-group">
@@ -118,13 +44,13 @@ $result = $conn->query($sql);
             while($row = $resultSearch->fetch_assoc()) {
                     
                     echo '
-                    <li><a href="baiviet' . $row['id'] . '.php">' . $row['name'] . '</a></li>
+                    <li><a href="baiviet' . $row['id'] . '.php" >' . $row['name'] . '</a></li>
                     ';
             
             }
             echo '</ul></div>';
         } else {
-            echo "Không tìm thấy kết quả nào.";
+            echo '<div class="sidebar"><h5>không có kết quả</h5><ul class="recent-posts"></div>';
         }
     }
 ?>
@@ -143,27 +69,39 @@ $result = $conn->query($sql);
             <div class="row">
                       
                         <?php
-                        if ($result->num_rows > 0) {
+
+$noidung = '';
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $noidung = trim($_POST['noidung'] ?? '');
+}
+if ($noidung === '') {
+    $sql = "SELECT * FROM baivietdata WHERE id BETWEEN 1 AND 6";
+} else {
+    $sql = "SELECT * FROM baivietdata WHERE name LIKE '%$noidung%'";
+}
+
+$result = $conn->query($sql);
+
+if ($result && $result->num_rows > 0) {
     echo '<div class="row">';
-    while($row = $result->fetch_assoc()) {
+    while ($row = $result->fetch_assoc()) {
         echo '
-    
-                <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4">
                 <div class="post-card">
-                <img src="'.$row['img'].'" class="card-img-top" alt="'.$row['name'].'">
-                <div class="card-body">
-                    <h5 class="card-title">'.$row['name'].'</h5>
-                    <p class="card-text">'.mb_substr($row['noidung'], 0, 100).'...</p>
-                    <button class="button-basic secondary"><ul class="recent-posts"><a href="baiviet'.$row['id'].'.php"">Xem chi tiết</a></ul></button>
+                    <img src="'.$row['img'].'" class="card-img-top" alt="'.$row['name'].'">
+                    <div class="card-body">
+                        <a href="baiviet'.$row['id'].'.php" style="text-decoration: none; color: black;">
+                            <h5 class="card-title">'.$row['name'].'</h5>
+                        </a>
+                        <p class="card-text">'.mb_substr($row['noidung'], 0, 100).'...</p>
+                    </div>
                 </div>
-                </div>
-                </div>
-            
+            </div>
         ';
     }
-    echo '</div>'; // đóng row
+    echo '</div>';
 } else {
-    echo "Không có bài viết nào.";
+    echo '<div class="col-md-6 mb-4"><h5>không có kết quả</h5><ul class="recent-posts"></div>';
 }
 
 $conn->close();
@@ -172,7 +110,6 @@ $conn->close();
         </div>
     </div>      
     </div>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
 <?php include 'footer.php'?>
