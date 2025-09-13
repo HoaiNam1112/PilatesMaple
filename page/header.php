@@ -110,22 +110,22 @@
             <a href="#">GIỚI THIỆU ▾</a>
             <ul>
               <li><a href="#">Về Maple</a></li>
-              <li><a href="#">Các dịch vụ</a></li>
+              <li><a href="#">Các khóa học</a></li>
               <li><a href="trainer.php">Đội ngũ huấn luyện viên</a></li>
             </ul>
           </li>
           <li><a href="#">LỊCH HỌC ▾</a>
           <ul>
               <li><a href="schedule.php">Lịch học tại Maple</a></li>
-              <li><a href="#">Trình độ các lớp tập</a></li>
+              <li><a href="level.php">Trình độ các lớp tập</a></li>
           </ul>
           </li>
           <li><a href="baiviet.php">BÀI VIẾT</a></li>
           <li><a href="lienhe.php">LIÊN HỆ</a></li>
         </ul>
         <ul class="menu-right">
-          <li><a href="../manager/login.php">ĐĂNG NHẬP</a></li>
-          <li><a href="../manager/register.php">ĐĂNG KÍ</a></li>
+          <li><a href="#">ĐĂNG NHẬP</a></li>
+          <li><a href="#">ĐĂNG KÍ</a></li>
         </ul>
       </nav>
     </header>
