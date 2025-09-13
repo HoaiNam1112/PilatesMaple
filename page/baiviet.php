@@ -1,7 +1,5 @@
 <?php include 'header.php'?>
 <?php include '../page/connect.php';
-$sql = "SELECT * FROM baivietdata WHERE id BETWEEN 1 AND 6";
-$result = $conn->query($sql);
 ?>
 
 <!DOCTYPE html>
@@ -68,22 +66,22 @@ $result = $conn->query($sql);
             <div class="col-md-8 main-content">
             <div class="row">
                       
-                        <?php
+<?php
 
-$noidung = '';
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $noidung = trim($_POST['noidung'] ?? '');
-}
-if ($noidung === '') {
-    $sql = "SELECT * FROM baivietdata WHERE id BETWEEN 1 AND 6";
-} else {
-    $sql = "SELECT * FROM baivietdata WHERE name LIKE '%$noidung%'";
-}
+    $noidung = '';
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $noidung = trim($_POST['noidung'] ?? '');
+    }
+    if ($noidung === '') {
+        $sql = "SELECT * FROM baivietdata WHERE id BETWEEN 1 AND 6";
+    } else {
+        $sql = "SELECT * FROM baivietdata WHERE name LIKE '%$noidung%'";
+    }
 
-$result = $conn->query($sql);
+    $result = $conn->query($sql);
 
-if ($result && $result->num_rows > 0) {
-    echo '<div class="row">';
+    if ($result && $result->num_rows > 0) {
+        echo '<div class="row">';
     while ($row = $result->fetch_assoc()) {
         echo '
             <div class="col-md-6 mb-4">
