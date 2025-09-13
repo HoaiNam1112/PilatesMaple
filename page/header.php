@@ -127,6 +127,7 @@
         <ul class="menu-right">
           <li><a href="<?php echo $base_url; ?>manager/login.php">ĐĂNG NHẬP</a></li>
           <li><a href="<?php echo $base_url; ?>manager/register.php">ĐĂNG KÍ</a></li>
+          <!-- hggggh -->
         </ul>
       </nav>
     </header>
