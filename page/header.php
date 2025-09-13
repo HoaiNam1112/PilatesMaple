@@ -1,3 +1,4 @@
+<?php include_once __DIR__ . '/../config.php'; ?>
 <!DOCTYPE html>
 <html lang="vi">
   <head>
@@ -105,7 +106,7 @@
         </div>
 
         <ul class="menu-center">
-          <li><a href="home.php">TRANG CHỦ</a></li>
+          <li><a href="<?php echo $base_url; ?>page/home.php">TRANG CHỦ</a></li>
           <li>
             <a href="#">GIỚI THIỆU ▾</a>
             <ul>

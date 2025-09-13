@@ -27,7 +27,7 @@
         if ($user['role'] == 'admin') {
             header('Location: ../admin/dashboard.php'); 
         } else {
-            header('Location:../index.php'); 
+            header('Location:../page/home.php'); 
         }
         exit();
     } else {
