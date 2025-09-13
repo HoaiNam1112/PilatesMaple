@@ -7,39 +7,14 @@
     <title>baiviet1</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="stylesheet" href="../css/baiviet.css" />
 </head>
-<style>
-     body {
-            background-color: #f8f9fa;
-            padding: 20px 0;
-        }
-        .search-box {
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-        .sidebar {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-            margin-bottom: 20px;
-        }
-        
-        .recent-posts  {
-            list-style: none;
-            padding: 0;
-        }
-        .recent-posts a {
-            text-decoration: none;
-            color: #000;
-            padding: 8px 0;
-            border-bottom: 1px solid #eee;
-        }
-</style>
+
 <body>
     <div class="container">
         <div class="row">
             <div class="col-md-9 main-content">
+                <br>
                 <h4>Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</h4>
                 <p class="fst-italic">Việc lựa chọn thời điểm tập Pilates phù hợp sẽ giúp bạn tối ưu hóa hiệu quả tập luyện và duy trì thói quen một cách lâu dài. Tùy vào nhịp sinh học và lịch trình cá nhân, bạn có thể tập vào buổi sáng, chiều hoặc tối để tận hưởng những lợi ích khác nhau mà Pilates mang lại. Hãy cùng PĀRAGATE® tìm hiểu nên tập Pilates vào lúc nào để đạt được kết quả như mong muốn nhé!</p>
                 <h4>Nên tập Pilates vào lúc nào?</h4>
@@ -89,22 +64,51 @@ Tuy nhiên, thời gian cụ thể có thể khác nhau tùy thuộc vào cơ đ
 
             </div>
             <div class="col-md-3">
-                    <div class="search-box">
-                        <div class="input-group">
-                            <input type="text" class="form-control" placeholder="Search">
-                            <button class="btn btn-outline-primary" type="button">Search</button>
-                        </div>
-                    </div>
-                    <div class="sidebar">
-                        <h5>Recent Post</h5>
-                        <ul class="recent-posts">
-                            <li><a href="baiviet1.php" >Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</a></li>
-                            <li><a href="baiviet2.php">Vì sao dân văn phòng nên tập Pilates? [Chuyên gia giải đáp]</a></li>
-                            <li><a href="baiviet3.php">Một buổi đào tạo HLV pilates diễn ra thế nào?</a></li>
-                            <li><a href="baiviet4.php">Mất bao lâu để trở thành huấn luyện viên Pilates?</a ></li>
-                            <li><a href="baiviet5.php">Những sai lầm cần tránh khi luyện tập Pilates bạn cần biết.</a></li>
-                        </ul>
-                    </div>
+            <form method="post">
+            <div class="search-box">
+                <div class="input-group">
+                    <input type="text" class="form-control" name="noidung" placeholder="Search">
+                    <button class="btn btn-outline-primary" type="submit" name="btn">
+                        <img src="../pic/search1.png" 
+                            alt="search" 
+                            class="img-fluid" 
+                            style="width: 30px; height: 30px;">
+                    </button>
+                </div>
+            </div>
+            </form>
+<?php   
+    include '../page/connect.php';
+    if (isset($_POST['btn'])) { 
+        $noidung = $_POST['noidung'];
+        $sqlSearch = "SELECT * FROM baivietdata WHERE name LIKE '%$noidung%' ";
+        $resultSearch = $conn->query($sqlSearch);
+
+        if ($resultSearch->num_rows > 0) {
+            echo '<div class="sidebar"><h5>Kết quả</h5><ul class="recent-posts">';
+            while($row = $resultSearch->fetch_assoc()) {
+                    
+                    echo '
+                    <li><a href="baiviet' . $row['id'] . '.php" >' . $row['name'] . '</a></li>
+                    ';
+            
+            }
+            echo '</ul></div>';
+        } else {
+            echo "Không tìm thấy kết quả nào.";
+        }
+    }
+?>
+                <div class="sidebar">
+                    <h5>Đề Xuất</h5>
+                    <ul class="recent-posts">
+                        <li><a href="baiviet1.php" >Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</a></li>
+                        <li><a href="baiviet2.php">Vì sao dân văn phòng nên tập Pilates? [chuyên gia giải đáp]</a></li>
+                        <li><a href="baiviet3.php">Một buổi đào tạo HLV pilates diễn ra thế nào?</a></li>
+                        <li><a href="baiviet4.php">Mất bao lâu để trở thành huấn luyện viên Pilates?</a ></li>
+                        <li><a href="baiviet5.php">Những sai lầm cần tránh khi luyện tập Pilates bạn cần biết.</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>    

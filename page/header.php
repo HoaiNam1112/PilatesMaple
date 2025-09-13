@@ -8,7 +8,6 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-
       }
 
       header {
@@ -125,8 +124,8 @@
           <li><a href="lienhe.php">LIÊN HỆ</a></li>
         </ul>
         <ul class="menu-right">
-          <li><a href="#">ĐĂNG NHẬP</a></li>
-          <li><a href="#">ĐĂNG KÍ</a></li>
+          <li><a href="../manager/login.php">ĐĂNG NHẬP</a></li>
+          <li><a href="../manager/register.php">ĐĂNG KÍ</a></li>
         </ul>
       </nav>
     </header>

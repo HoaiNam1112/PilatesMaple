@@ -25,7 +25,7 @@ $result = mysqli_query($conn, "SELECT * FROM courses ORDER BY id DESC");
           <th>Mô tả</th>
           <th>Giá</th>
           <th>Ngày tạo</th>
-          <th>Hành động</th>
+          <th>Chức năng</th>
         </tr>
       </thead>
       <tbody>
