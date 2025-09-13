@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../page/connect.php';
 
 // Lấy ID từ URL
@@ -8,7 +9,7 @@ if (!isset($_GET['id'])) {
 $id = intval($_GET['id']);
 
 // Lấy thông tin HLV từ DB
-$sql = "SELECT * FROM trainer WHERE trainer_id=$id";
+$sql = "SELECT * FROM trainers WHERE id=$id";
 $result = $conn->query($sql);
 if ($result->num_rows == 0) {
     die("Không tìm thấy huấn luyện viên.");
@@ -18,14 +19,14 @@ $trainer = $result->fetch_assoc();
 // Nếu submit form cập nhật
 if (isset($_POST['update'])) {
     $name = $_POST['name'];
-    $specialization = $_POST['specialization'];
-    $experience = $_POST['experience_years'];
-    $bio = $_POST['bio'];
+    $certifications = $_POST['certifications']; // đúng tên biến
+    $experience = $_POST['experience'];
+    $quote = $_POST['quote'];
 
-    $sqlUpdate = "UPDATE trainer 
-                  SET name='$name', specialization='$specialization',
-                      experience_years='$experience', bio='$bio'
-                  WHERE trainer_id=$id";
+    $sqlUpdate = "UPDATE trainers 
+                  SET name='$name', certifications='$certifications',
+                      experience='$experience', quote='$quote'
+                  WHERE id=$id";
 
     if ($conn->query($sqlUpdate) === TRUE) {
         header("Location: trainer.php");
@@ -41,46 +42,96 @@ if (isset($_POST['update'])) {
 <head>
     <meta charset="UTF-8">
     <title>Sửa Huấn luyện viên</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-color: #f5f5dc; /* nền be */
+            background-color: rgba(237, 230, 192, 1);
             display: flex;
             justify-content: center;
             align-items: center;
             min-height: 100vh;
+            font-family: Arial, sans-serif;
         }
         .edit-box {
             background: #fff;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            width: 400px;
+            width: 500px;
         }
-        h3 { text-align: center; margin-bottom: 20px; }
+        h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #444;
+        }
+        input[type="text"], input[type="number"], textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #bbb;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .btn-row {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .btn {
+            padding: 10px 18px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s;
+        }
+        .btn-secondary {
+            background: #ccc;
+            color: #000;
+        }
+        .btn-secondary:hover {
+            background: #aaa;
+        }
+        .btn-primary {
+            background: #66a777ff;
+            color: #fff;
+        }
+        .btn-primary:hover {
+            background: #3fe785ff;
+        }
     </style>
 </head>
 <body>
     <div class="edit-box">
         <h3>Sửa thông tin HLV</h3>
         <form method="post">
-            <div class="mb-3">
-                <label class="form-label">Tên:</label>
-                <input type="text" name="name" class="form-control" value="<?= $trainer['name'] ?>" required>
+            <div class="form-group">
+                <label>Tên:</label>
+                <input type="text" name="name" value="<?= $trainer['name'] ?>" required>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Chuyên môn:</label>
-                <input type="text" name="specialization" class="form-control" value="<?= $trainer['specialization'] ?>" required>
+            <div class="form-group">
+                <label>Chuyên môn:</label>
+                <input type="text" name="certifications" value="<?= $trainer['certifications'] ?>" required>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Kinh nghiệm (năm):</label>
-                <input type="number" name="experience_years" class="form-control" value="<?= $trainer['experience_years'] ?>" required>
+            <div class="form-group">
+                <label>Kinh nghiệm:</label>
+                <input type="text" name="experience" value="<?= $trainer['experience'] ?>" required>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Bio:</label>
-                <textarea name="bio" class="form-control" rows="3"><?= $trainer['bio'] ?></textarea>
+            <div class="form-group">
+                <label>Bio:</label>
+                <textarea name="quote" rows="3"><?= $trainer['quote'] ?></textarea>
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="btn-row">
                 <a href="trainer.php" class="btn btn-secondary">Hủy</a>
                 <button type="submit" name="update" class="btn btn-primary">Cập nhật</button>
             </div>
