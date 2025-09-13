@@ -53,7 +53,7 @@ if (!empty($_POST['username']) && !empty($_POST['password']) && !empty($_POST['p
         <button type="submit">Đăng ký</button>
         <p class="message">
           Đã có tài khoản? <a href="../manager/login.php">Đăng nhập</a>
-          <a href="../index.php">Trang chủ</a>
+          <a href="../page/home.php">Trang chủ</a>
         </p>
          <?php if (!empty($err)) echo "<p style='color:red;'>$err</p>"; ?>
       </form>

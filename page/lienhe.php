@@ -103,7 +103,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
                         <form method="post" class="mt-3">
                             <div class="mb-3">
                                 <label for="regEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="regEmail" name="email" placeholder="email@example.com">
+                                <input type="email" class="form-control" id="regEmail" name="email" placeholder="email@gmail.com">
                             </div>
 
                             <div class="mb-3">
@@ -142,7 +142,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
 
                             <div class="mb-3">
                                 <label for="contactEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@example.com">
+                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@gmail.com">
                             </div>
 
                             <div class="mb-3">

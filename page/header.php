@@ -1,4 +1,3 @@
-<?php include_once __DIR__ . '/../config.php'; ?>
 <!DOCTYPE html>
 <html lang="vi">
   <head>
@@ -106,28 +105,27 @@
         </div>
 
         <ul class="menu-center">
-          <li><a href="<?php echo $base_url; ?>page/home.php">TRANG CHỦ</a></li>
+          <li><a href="../page/home.php">TRANG CHỦ</a></li>
           <li>
             <a href="#">GIỚI THIỆU ▾</a>
             <ul>
               <li><a href="#">Về Maple</a></li>
-              <li><a href="#">Các dịch vụ</a></li>
+              <li><a href="#">Các khóa học</a></li>
               <li><a href="trainer.php">Đội ngũ huấn luyện viên</a></li>
             </ul>
           </li>
           <li><a href="#">LỊCH HỌC ▾</a>
           <ul>
               <li><a href="schedule.php">Lịch học tại Maple</a></li>
-              <li><a href="#">Trình độ các lớp tập</a></li>
+              <li><a href="level.php">Trình độ các lớp tập</a></li>
           </ul>
           </li>
           <li><a href="baiviet.php">BÀI VIẾT</a></li>
           <li><a href="lienhe.php">LIÊN HỆ</a></li>
         </ul>
         <ul class="menu-right">
-          <li><a href="<?php echo $base_url; ?>manager/login.php">ĐĂNG NHẬP</a></li>
-          <li><a href="<?php echo $base_url; ?>manager/register.php">ĐĂNG KÍ</a></li>
-          <!-- hggggh -->
+          <li><a href="../manager/login.php">ĐĂNG NHẬP</a></li>
+          <li><a href="../manager/register.php">ĐĂNG KÍ</a></li>
         </ul>
       </nav>
     </header>
