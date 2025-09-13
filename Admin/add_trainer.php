@@ -1,23 +1,24 @@
 <?php
+session_start();
 include '../page/connect.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $name = $_POST['name'];
-    $specialization = $_POST['specialization'];
-    $experience = $_POST['experience_years'];
-    $bio = $_POST['bio'];
+    $certifications = $_POST['certifications']; // đúng tên biến
+    $experience = $_POST['experience'];
+    $quote = $_POST['quote'];
 
     // upload ảnh
     $imageName = "";
-    if (!empty($_FILES['image']['name'])) {
+    if (!empty($_FILES['photo']['name'])) {
         $targetDir = "../pic/";
-        $imageName = "_" . basename($_FILES['image']['name']);
+        $imageName = time() . "_" . basename($_FILES['photo']['name']); // thêm timestamp tránh trùng
         $targetFile = $targetDir . $imageName;
-        move_uploaded_file($_FILES['image']['tmp_name'], $targetFile);
+        move_uploaded_file($_FILES['photo']['tmp_name'], $targetFile);
     }
 
-    $sql = "INSERT INTO trainer (name, specialization, experience_years, bio, image)
-            VALUES ('$name','$specialization','$experience','$bio','$imageName')";
+    $sql = "INSERT INTO trainers (name, certifications, experience, quote, photo)
+            VALUES ('$name','$certifications','$experience','$quote','$imageName')";
     if ($conn->query($sql) === TRUE) {
         header("Location: trainer.php");
         exit();
@@ -81,16 +82,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <input type="text" name="name" required>
 
       <label>Chuyên môn</label>
-      <input type="text" name="specialization" required>
+      <input type="text" name="certifications" required>
 
       <label>Kinh nghiệm (năm)</label>
-      <input type="number" name="experience_years" required>
+      <input type="text" name="experience" required>
 
       <label>Tiểu sử</label>
-      <textarea name="bio"></textarea>
+      <textarea name="quote"></textarea>
 
       <label>Ảnh</label>
-      <input type="file" name="image">
+      <input type="file" name="photo">
 
       <button type="submit" class="btn btn-save">Lưu</button>
       <a href="trainer.php" class="btn btn-cancel">Hủy</a>
