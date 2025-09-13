@@ -1,4 +1,5 @@
 <?php
+session_start();
 include '../page/connect.php';
 include '../page/header.php';
 // Nếu admin muốn xóa đăng ký
@@ -28,7 +29,7 @@ $result = $conn->query($sql);
 </head>
 <body class="p-4 bg-light">
   <div class="container">
-    <h2 class="mb-4">📧 Danh sách đăng ký nhận tin</h2>
+    <h2 class="mb-4">Danh sách đăng ký nhận tin</h2>
     <table class="table table-bordered table-hover">
       <thead class="table-dark">
         <tr>

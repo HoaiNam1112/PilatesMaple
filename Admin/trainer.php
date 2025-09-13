@@ -1,7 +1,9 @@
 <?php
+//session_start();
 include '../page/connect.php';
+//include 'check_admin.php';
 
-$sql = "SELECT * FROM trainer";
+$sql = "SELECT * FROM trainers";
 $result = $conn->query($sql);
 ?>
 
@@ -19,15 +21,16 @@ $result = $conn->query($sql);
       padding: 0;
     }
     .container { margin: auto; padding:20px; }
-    .page-title {
+     /* Banner */
+    .banner {
+      width: auto;
+      background: #e1c197ff;
       text-align: center;
-      font-size: 36px;
+      padding: 40px 20px;
+      font-size: 40px;
       font-weight: bold;
       color: #333;
-      background-color: #e1c197ff;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
       margin-bottom: 20px;
     }
     .btn-add {
@@ -59,32 +62,47 @@ $result = $conn->query($sql);
     }
     tr:nth-child(even) { background-color: #f9f9f9; }
     tr:hover { background-color: #f1f1f1; }
-    .icon-btn {
-      border: none;
-      background: transparent;
-      cursor: pointer;
-      font-size: 18px;
+
+    /* Nút sửa & xóa */
+    .btn-edit, .btn-delete {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 5px;
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
     }
-    .icon-edit { color: #ffc107; }
-    .icon-delete { color: #dc3545; }
+    .btn-edit {
+      background-color: #ffc107; /* vàng */
+    }
+    .btn-edit:hover {
+      background-color: #e0a800;
+    }
+    .btn-delete {
+      background-color: #dc3545; /* đỏ */
+    }
+    .btn-delete:hover {
+      background-color: #c82333;
+    }
   </style>
 </head>
 <body>
   <?php include '../page/header.php'; ?>
 
+  <div class="banner">Quản lý Huấn luyện viên</div>
   <div class="container">
-    <h1 class="page-title">Quản lý Huấn luyện viên</h1>
-
+  
     <!-- Nút sang trang thêm -->
     <a href="add_trainer.php" class="btn-add">
-      <i class="fa fa-user-plus"></i> Thêm Huấn luyện viên
+      Thêm Huấn luyện viên
     </a>
 
     <!-- Bảng danh sách -->
     <table>
       <thead>
         <tr>
-          <th>Stt</th>
+          <th>STT</th>
           <th>Tên</th>
           <th>Chuyên môn</th>
           <th>Kinh nghiệm</th>
@@ -95,36 +113,36 @@ $result = $conn->query($sql);
         </tr>
       </thead>
       <tbody>
-      <?php
-$stt = 1;
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) { ?>
-        <tr>
-            <td><?php echo $stt++; ?></td>
-            <td><?php echo $row['name']; ?></td>
-            <td><?php echo $row['specialization']; ?></td>
-            <td><?php echo $row['experience_years']; ?> năm</td>
-            <td><?php echo $row['bio']; ?></td>
-            <td>
-                <img src="../pic/<?php echo $row['image']; ?>" width="80">
-            </td>
-            <td>
-                <a href="edit_trainer.php?id=<?php echo $row['trainer_id']; ?>" class="icon-btn">
-                    <i class="fa fa-pen icon-edit"></i>
-                </a>
-            </td>
-            <td>
-                <a href="delete_trainer.php?id=<?php echo $row['trainer_id']; ?>" 
-                   class="icon-btn" 
-                   onclick="return confirm('Bạn có chắc chắn muốn xóa?');">
-                    <i class="fa fa-trash icon-delete"></i>
-                </a>
-            </td>
-        </tr>
-<?php }
-} else { ?>
-    <tr><td colspan="8">Chưa có huấn luyện viên nào</td></tr>
-<?php } ?>
+        <?php
+          $stt = 1;
+          if ($result->num_rows > 0) {
+              while($row = $result->fetch_assoc()) { ?>
+                  <tr>
+                      <td><?php echo $stt++; ?></td>
+                      <td><?php echo $row['name']; ?></td>
+                      <td><?php echo $row['certifications']; ?></td>
+                      <td><?php echo $row['experience']; ?></td>
+                      <td><?php echo $row['quote']; ?></td>
+                      <td>
+                          <img src="../pic/<?php echo $row['photo']; ?>" width="80">
+                      </td>
+                      <td>
+                          <a href="edit_trainer.php?id=<?php echo $row['id']; ?>" class="btn-edit">
+                            Sửa
+                          </a>
+                      </td>
+                      <td>
+                          <a href="delete_trainer.php?id=<?php echo $row['id']; ?>" 
+                            class="btn-delete"
+                            onclick="return confirm('Bạn có chắc chắn muốn xóa?');">
+                              Xóa
+                          </a>
+                      </td>
+                  </tr>
+          <?php }
+          } else { ?>
+              <tr><td colspan="8">Chưa có huấn luyện viên nào</td></tr>
+          <?php } ?>
 
       </tbody>
     </table>

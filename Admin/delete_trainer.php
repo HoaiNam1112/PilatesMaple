@@ -5,7 +5,7 @@ if (isset($_GET['id'])) {
     $id = intval($_GET['id']);
 
     // Dùng prepared statement để an toàn hơn
-    $stmt = $conn->prepare("DELETE FROM trainer WHERE trainer_id = ?");
+    $stmt = $conn->prepare("DELETE FROM trainers WHERE id = ?");
     $stmt->bind_param("i", $id);
 
     if ($stmt->execute()) {
