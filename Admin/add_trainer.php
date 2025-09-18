@@ -12,13 +12,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $imageName = "";
     if (!empty($_FILES['photo']['name'])) {
         $targetDir = "../pic/";
-        $imageName = time() . "_" . basename($_FILES['photo']['name']); // thêm timestamp tránh trùng
+        $imageName = basename($_FILES['photo']['name']);
         $targetFile = $targetDir . $imageName;
-        move_uploaded_file($_FILES['photo']['tmp_name'], $targetFile);
+        if (move_uploaded_file($_FILES['photo']['tmp_name'], $targetFile)) {
+        // Lưu cả đường dẫn vào DB
+        $imagePath = $targetFile; 
+    }
     }
 
     $sql = "INSERT INTO trainers (name, certifications, experience, quote, photo)
-            VALUES ('$name','$certifications','$experience','$quote','$imageName')";
+            VALUES ('$name','$certifications','$experience','$quote','$imagePath')";
     if ($conn->query($sql) === TRUE) {
         header("Location: trainer.php");
         exit();
@@ -71,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
     .btn-save { background-color: #28a745; color: #fff; }
     .btn-save:hover { background-color: #218838; }
-    .btn-cancel { background-color: #ccc; }
+    .btn-cancel { background-color: #ccc; color: #333; text-decoration: none; }
   </style>
 </head>
 <body>
