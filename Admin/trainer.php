@@ -88,7 +88,7 @@ $result = $conn->query($sql);
   </style>
 </head>
 <body>
-  <?php include '../page/header.php'; ?>
+<?php include 'sidebar.php'; ?>
 
   <div class="banner">Quản lý Huấn luyện viên</div>
   <div class="container">
@@ -124,7 +124,7 @@ $result = $conn->query($sql);
                       <td><?php echo $row['experience']; ?></td>
                       <td><?php echo $row['quote']; ?></td>
                       <td>
-                          <img src="../pic/<?php echo $row['photo']; ?>" width="80">
+                          <img src="<?php echo $row['photo']; ?>" width="80">
                       </td>
                       <td>
                           <a href="edit_trainer.php?id=<?php echo $row['id']; ?>" class="btn-edit">
@@ -148,6 +148,5 @@ $result = $conn->query($sql);
     </table>
   </div>
 
-  <?php include '../page/footer.php'; ?>
 </body>
 </html>
