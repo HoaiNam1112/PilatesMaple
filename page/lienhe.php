@@ -1,4 +1,3 @@
-<?php include 'header.php'?>
 <?php
 include 'connect.php';
 $successMsg = "";
@@ -83,6 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
     <link rel="stylesheet" href="../css/baiviet.css" />
 </head>
 <body>
+    <?php include 'header.php'?>
     <h1 class="banner mb-4">Kết Nối Với Chúng Tôi</h1>
     <div class="container my-5">
         <div class="row justify-content-center">
