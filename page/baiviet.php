@@ -14,7 +14,9 @@
 
 </head>
 <body>
-    <h1 class="banner ">Bài Viết</h1>
+    <div class="banner">
+        <h1>Bài Viết</h1>
+    </div>
     <div class="container">
         <div class="row">
         <div class="col-md-4">
