@@ -12,10 +12,13 @@ mysqli_set_charset($conn, 'UTF8');
   <link rel="stylesheet" href="../css/levels.css">
 </head>
 <body>
-  <header class="header-levels">
+  <div class="banner">
+  <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
+  <div class="banner-text">
     <h1>TRÌNH ĐỘ CÁC LỚP TẬP</h1>
-    <p>Mỗi học viên tại <strong>MAPLE PILATES</strong> đều được các huấn luyện viên tư vấn chọn lớp tập phù hợp với thể trạng và mục tiêu.</p>
-  </header>
+     <p>Mỗi học viên tại <strong>MAPLE PILATES</strong> đều được các huấn luyện viên tư vấn chọn lớp tập phù hợp với thể trạng và mục tiêu.</p>
+  </div>
+</div>
 
   <main class="container-levels">
     <section class="level-card">

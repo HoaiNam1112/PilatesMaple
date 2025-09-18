@@ -8,8 +8,6 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Kết nối thất bại: " . $conn->connect_error);
 }
-
-include 'header.php';
 ?>
 <!DOCTYPE html>
 <html lang="vi">
@@ -19,9 +17,13 @@ include 'header.php';
   <link rel="stylesheet" href="../css/huanluyen.css">
 </head>
 <body>
+    <?php include 'header.php'; ?>   
   <div class="banner">
-    <h1>Đội Ngũ Huấn Luyện Viên Maple Pilates</h1>
+  <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
+  <div class="banner-text">
+    <h1>ĐỘI NGŨ HUẤN LUYỆN VIÊN MAPLE PILATES</h1>
   </div>
+</div>
 
   <div class="team-photo">
     <img src="../pic/team.jpg" alt="Đội ngũ huấn luyện viên">

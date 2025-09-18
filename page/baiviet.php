@@ -1,4 +1,3 @@
-<?php include 'header.php'?>
 <?php include '../page/connect.php';
 ?>
 
@@ -14,9 +13,9 @@
 
 </head>
 <body>
-    <div class="banner">
-        <h1>Bài Viết</h1>
-    </div>
+    <?php include 'header.php'?>
+
+    <h1 class="banner ">Bài Viết</h1>
     <div class="container">
         <div class="row">
         <div class="col-md-4">

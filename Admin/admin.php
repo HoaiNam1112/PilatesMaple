@@ -1,7 +1,7 @@
 <?php
 //session_start();
 include '../page/connect.php';
-include 'check_admin.php';
+//include 'check_admin.php';
 
 
 // Xử lý cập nhật role
@@ -22,7 +22,7 @@ if (isset($_POST['update_role'])) {
 $sql = "SELECT * FROM users";
 $result = $conn->query($sql);
 
-include '../page/header.php';
+include 'sidebar.php';
 ?>
 
 <!DOCTYPE html>
@@ -114,6 +114,5 @@ include '../page/header.php';
             <?php } ?>
         </table>
     </div>
-    <?php include '../page/footer.php'; ?>
 </body>
 </html>
