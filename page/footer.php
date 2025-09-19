@@ -39,6 +39,9 @@
       grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
       gap: 40px;
       align-items: start;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 40px;
+      border-radius: 20px;
     }
 
     /* tiêu đề cột */
