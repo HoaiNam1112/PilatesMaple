@@ -21,21 +21,23 @@ mysqli_set_charset($conn, 'UTF8'); ?>
 
 <body>
   <!-- Banner Slider -->
-  <!-- Banner Slider -->
-  <div class="slider">
-    <div class="slides">
-      <div class="slide">
+  <!-- HTML -->
+  <div class="new-slider">
+    <div class="new-slides">
+      <div class="new-slide active">
         <img src="../pic/banner.jpg" alt="Banner 1">
       </div>
-      <div class="slide">
+      <div class="new-slide">
         <img src="../pic/paragate-pilates-website-banner-web-scaled.jpg" alt="Banner 2">
       </div>
-      <div class="slide">
+      <div class="new-slide">
         <img src="../pic/paragate-web-02-scaled.jpg" alt="Banner 3">
       </div>
     </div>
-  </div>
 
+    <!-- Dots chỉ báo -->
+    <div class="dots"></div>
+  </div>
 
 
   <script src="../js/home.js"></script>
@@ -55,34 +57,32 @@ mysqli_set_charset($conn, 'UTF8'); ?>
   <div class="class-footer">ĐỊA CHỈ LỚP HỌC</div>
 
 
+  <!-- Swiper Slider -->
   <div class="pp-card-slider-wrapper swiper-container-wrap">
     <div class="pp-card-slider pp-swiper-slider swiper-container-fade"
       data-slider-settings='{
-         "direction":"horizontal",
-         "speed":400,
-         "effect":"fade",
-         "slidesPerView":1,
-         "grabCursor":false,
-         "autoHeight":false,
-         "loop":true,
-         "fadeEffect":{"crossFade":true},
-         "autoplay":{"delay":3000,"disableOnInteraction":false},
-         "pagination":{"el":".swiper-pagination","type":"bullets","clickable":true}
-       }'>
+       "direction":"horizontal",
+       "speed":600,
+       "effect":"fade",
+       "slidesPerView":1,
+       "grabCursor":true,
+       "autoHeight":false,
+       "loop":true,
+       "fadeEffect":{"crossFade":true},
+       "autoplay":{"delay":3000,"disableOnInteraction":false},
+       "pagination":{"el":".swiper-pagination","type":"bullets","clickable":true}
+     }'>
 
       <div class="swiper-wrapper">
-
-        <!-- Slide 1: Hà Nội -->
+        <!-- Slide 1 -->
         <div class="pp-card-slider-item swiper-slide">
           <div class="pp-card-slider-image">
-            <a href="https://paragate.vn/wp-content/uploads/2023/09/Paragate_Ha_Noi.jpg" class="elementor-clickable">
-              <img src="../pic/cơ_sở_trichsai.jpg" alt="Cơ sở Hà Nội" />
-            </a>
+            <img src="../pic/cơ_sở_trichsai.jpg" alt="Cơ sở Hà Nội" />
           </div>
           <div class="pp-card-slider-content-wrap">
             <div class="pp-card-slider-date">
-              <span class="pp-card-slider-meta-icon pp-icon"><i class="fas fa-calendar-alt"></i></span>
-              <span class="pp-card-slider-meta-text">Cơ sở Hà Nội</span>
+              <i class="fas fa-calendar-alt"></i>
+              <span>Cơ sở Hà Nội</span>
             </div>
             <div class="pp-card-slider-content">
               <p>35/52 Tô Ngọc Vân – Tây Hồ, Hà Nội</p>
@@ -90,17 +90,15 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           </div>
         </div>
 
-        <!-- Slide 2: Đà Nẵng -->
+        <!-- Slide 2 -->
         <div class="pp-card-slider-item swiper-slide">
           <div class="pp-card-slider-image">
-            <a href="https://paragate.vn/wp-content/uploads/2023/09/Paragate_Da_Nang-1.jpg" class="elementor-clickable">
-              <img src="../pic/cơ_sở_danang.jpg" alt="Cơ sở Đà Nẵng" />
-            </a>
+            <img src="../pic/cơ_sở_danang.jpg" alt="Cơ sở Đà Nẵng" />
           </div>
           <div class="pp-card-slider-content-wrap">
             <div class="pp-card-slider-date">
-              <span class="pp-card-slider-meta-icon pp-icon"><i class="fas fa-calendar-alt"></i></span>
-              <span class="pp-card-slider-meta-text">Cơ sở Đà Nẵng (CS nhượng quyền)</span>
+              <i class="fas fa-calendar-alt"></i>
+              <span>Cơ sở Đà Nẵng (CS nhượng quyền)</span>
             </div>
             <div class="pp-card-slider-content">
               <p>59A Lê Lợi, Thạch Thang, Quận Hải Châu, Tp Đà Nẵng</p>
@@ -108,17 +106,15 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           </div>
         </div>
 
-        <!-- Slide 3: Hồ Chí Minh -->
+        <!-- Slide 3 -->
         <div class="pp-card-slider-item swiper-slide">
           <div class="pp-card-slider-image">
-            <a href="https://paragate.vn/wp-content/uploads/2025/03/z6441397725213_025c4335871c0b85f41b825100dc75fe.jpg" class="elementor-clickable">
-              <img src="../pic/cơ_sở_hcm.jpg" alt="Cơ sở Hồ Chí Minh" />
-            </a>
+            <img src="../pic/cơ_sở_hcm.jpg" alt="Cơ sở Hồ Chí Minh" />
           </div>
           <div class="pp-card-slider-content-wrap">
             <div class="pp-card-slider-date">
-              <span class="pp-card-slider-meta-icon pp-icon"><i class="fas fa-calendar-alt"></i></span>
-              <span class="pp-card-slider-meta-text">Cơ sở Hồ Chí Minh (CS nhượng quyền)</span>
+              <i class="fas fa-calendar-alt"></i>
+              <span>Cơ sở Hồ Chí Minh (CS nhượng quyền)</span>
             </div>
             <div class="pp-card-slider-content">
               <p>Tầng 2, Safomec Building, 7/1 Thành Thái, Quận 10, Hồ Chí Minh</p>
@@ -126,24 +122,21 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           </div>
         </div>
 
-        <!-- Slide 4: Hội An -->
+        <!-- Slide 4 -->
         <div class="pp-card-slider-item swiper-slide">
           <div class="pp-card-slider-image">
-            <a href="https://paragate.vn/wp-content/uploads/2023/09/Paragate_Hoi_An.jpg" class="elementor-clickable">
-              <img src="../pic/cơ_sở_2.jpg" alt="Cơ sở Hội An" />
-            </a>
+            <img src="../pic/cơ_sở_2.jpg" alt="Cơ sở Hội An" />
           </div>
           <div class="pp-card-slider-content-wrap">
             <div class="pp-card-slider-date">
-              <span class="pp-card-slider-meta-icon pp-icon"><i class="fas fa-calendar-alt"></i></span>
-              <span class="pp-card-slider-meta-text">Cơ sở Hội An</span>
+              <i class="fas fa-calendar-alt"></i>
+              <span>Cơ sở Hội An</span>
             </div>
             <div class="pp-card-slider-content">
               <p>Đường Nguyễn Phúc Chu, Phường Minh An, TP Hội An</p>
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- Pagination -->
@@ -153,6 +146,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
 
 
 
@@ -225,22 +219,50 @@ mysqli_set_charset($conn, 'UTF8'); ?>
   <section class="teacher-section">
     <div class="teacher-header">
       <h3>ĐỘI NGŨ GIÁO VIÊN</h3>
+      <p class="layout-label">Tất cả giáo viên</p>
     </div>
-    <div class="layout-label">Tất cả giáo viên</div>
+
     <div class="teacher-grid">
-      <div class="teacher-card"><img src="../pic/hien.jpg" alt="Võ Thị Hiền"></div>
-      <div class="teacher-card"><img src="../pic/hai.jpg" alt="Võ Thị Hải"></div>
-      <div class="teacher-card"><img src="../pic/hongthuy.png" alt="Hồng Thúy"></div>
-      <div class="teacher-card"><img src="../pic/ngocthuy.png" alt="Ngọc Thúy"></div>
-      <div class="teacher-card"><img src="../pic/nga.png" alt="Nga Yopi"></div>
-      <div class="teacher-card"><img src="../pic/phamhuong.png" alt="Phạm Hướng"></div>
-      <div class="teacher-card"><img src="../pic/chiyen.png" alt="Hải Yến"></div>
-      <div class="teacher-card"><img src="../pic/dothihuong.jpg" alt="Đỗ Thị Hương"></div>
-      <div class="teacher-card"><img src="../pic/hongthuy.png" alt="Hồng Thúy"></div>
-      <!-- Thêm bao nhiêu ảnh tùy bạn -->
+      <div class="teacher-card">
+        <img src="../pic/hien.jpg" alt="Võ Thị Hiền">
+        <div class="teacher-info">Võ Thị Hiền</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/hai.jpg" alt="Võ Thị Hải">
+        <div class="teacher-info">Võ Thị Hải</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/hongthuy.png" alt="Hồng Thúy">
+        <div class="teacher-info">Hồng Thúy</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/ngocthuy.png" alt="Ngọc Thúy">
+        <div class="teacher-info">Ngọc Thúy</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/nga.png" alt="Nga Yopi">
+        <div class="teacher-info">Nga Yopi</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/phamhuong.png" alt="Phạm Hướng">
+        <div class="teacher-info">Phạm Hướng</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/chiyen.png" alt="Hải Yến">
+        <div class="teacher-info">Hải Yến</div>
+      </div>
+
+      <div class="teacher-card">
+        <img src="../pic/dothihuong.jpg" alt="Đỗ Thị Hương">
+        <div class="teacher-info">Đỗ Thị Hương</div>
+      </div>
     </div>
-
-
   </section>
 
 
@@ -393,7 +415,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
   </script>
 
 
-  <section class="testimonial-section">
+  <section class="testimonial1-section">
     <h2 class="testimonial-title">CHIA SẺ CỦA HỌC VIÊN VỀ PĀRAGATE®</h2>
 
     <div class="testimonial-container">
