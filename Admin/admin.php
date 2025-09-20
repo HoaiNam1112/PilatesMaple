@@ -1,7 +1,7 @@
 <?php
-//session_start();
+session_start();
 include '../page/connect.php';
-//include 'check_admin.php';
+include 'check_admin.php';
 
 
 // Xử lý cập nhật role
@@ -30,43 +30,8 @@ include 'sidebar.php';
 <head>
     <meta charset="UTF-8">
     <title>Phân quyền người dùng</title>
+    <link rel="stylesheet" href="../css/admin.css" />
     <style>
-        body { 
-            font-family: Arial; 
-            background:#f5f5dc; 
-        }
-        .banner {
-            width: auto;
-            background: #e1c197ff;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 40px;
-            font-weight: bold;
-            color: #333;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            margin-bottom: 20px;
-        }
-        .container { 
-            width:800px; 
-            margin:30px auto; 
-            background:#fff; 
-            padding:20px; 
-            border-radius:8px; 
-            box-shadow:0 2px 6px rgba(0,0,0,0.2);
-        }
-        table { 
-            width:100%; 
-            border-collapse:collapse; 
-        }
-        th, td { 
-            border:1px solid #ccc; 
-            padding:10px; 
-            text-align:center; 
-        }
-        th { 
-            background:#333; 
-            color:#fff; 
-        }
         select { 
             padding:5px; 
         }
@@ -84,8 +49,8 @@ include 'sidebar.php';
     </style>
 </head>
 <body>
-    <div class="banner"> Phân quyền người dùng</div>
     <div class="container">
+        <div class="banner"> Phân quyền người dùng</div>
         <table>
             <tr>
                 <th>Tên đăng nhập</th>
