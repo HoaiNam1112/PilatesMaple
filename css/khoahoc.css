@@ -1,0 +1,66 @@
+.banner {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.img-banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.dau {
+  padding-top: 20px;
+  text-align: center;
+}
+.so1 {
+  padding-top: 50px;
+  text-align: center;
+  color: white;
+  background-color: #6a615d;
+}
+.so2 {
+  padding-bottom: 20px;
+}
+.custom-box {
+  background: #fff;
+  border-radius: 0%;
+  padding: 30px;
+  margin: 20px auto;
+  box-shadow: 0 6px 6px rgba(8, 0, 0, 0.2);
+}
+.custom-box li {
+  list-style: none;
+}
+.imgdinh {
+  margin-top: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("../pic/khoadaotaohero.jpg") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient(rgba(106, 97, 93, 0.5), rgba(106, 97, 93, 0.5)),
+    url("../pic/khoadaotaohero.jpg") center/cover no-repeat;
+}
+.product-card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  border-top: 10px solid #6a615d;
+  margin: 20px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.card img {
+  height: 450px;
+  object-fit: cover;
+}
+.lienhe {
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px auto;
+}
