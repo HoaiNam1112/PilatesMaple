@@ -1,39 +1,15 @@
+<?php
+session_start();
+include 'check_admin.php';
+include 'sidebar.php';
+?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="../css/admin.css" />
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      display: flex;
-    }
-    /* Sidebar */
-    .sidebar {
-      width: 220px;
-      background: #1dae66;
-      color: white;
-      height: 100vh;
-      position: fixed;
-      top: 0;
-      left: 0;
-      padding-top: 20px;
-    }
-    .sidebar h2 {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    .sidebar a {
-      display: block;
-      padding: 12px 20px;
-      color: white;
-      text-decoration: none;
-    }
-    .sidebar a:hover {
-      background: #14834d;
-    }
     /* Main */
     .main {
       margin-left: 220px;
@@ -92,19 +68,10 @@
   </style>
 </head>
 <body>
-  <!-- Sidebar -->
-  <div class="sidebar">
-    <h2>Admin</h2>
-    <a href="manager_schedule.php"> Quản lí lịch học</a>
-    <a href="ql_form_lien_he.php"> Quản lí form liên hệ</a>
-    <a href="ql_phan_quyen.php"> Quản lí phân quyền</a>
-     <div class="add"><a href="../page/home.php"> Trang chủ</a></div>
-  </div>
-
   <!-- Main content -->
   <div class="main">
     <h1>Danh sách </h1>
-    <a class="btn btn-add" href="../admin/add_course.php">➕ Thêm khóa học</a>
+    <a class="btn btn-add" href="../admin/add_course.php">Thêm khóa học</a>
     <table>
       <tr>
         <th>Mã khóa học</th>
