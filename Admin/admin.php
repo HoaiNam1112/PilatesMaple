@@ -64,7 +64,7 @@ include 'sidebar.php';
                     <td>
                         <?php if ($row['role'] !== 'admin') { ?>
                             <form method="post" style="margin:0;">
-                                <input type="hidden" name="user_id" value="<?= $row['user_id'] ?>">
+                                <input type="hidden" name="id" value="<?= $row['id'] ?>">
                                 <select name="role">
                                     <option value="user" <?= $row['role']=='user'?'selected':'' ?>>User</option>
                                     <option value="admin" <?= $row['role']=='admin'?'selected':'' ?>>Admin</option>
