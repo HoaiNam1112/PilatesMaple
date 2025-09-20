@@ -6,12 +6,12 @@ include 'check_admin.php';
 
 // Xử lý cập nhật role
 if (isset($_POST['update_role'])) {
-    $user_id = intval($_POST['user_id']);
+    $user_id = intval($_POST['id']);
     $new_role = $_POST['role'];
 
     // Không cho đổi quyền của chính superadmin
-    if ($user_id != $_SESSION['user_id']) {
-        $sql = "UPDATE users SET role='$new_role' WHERE user_id=$user_id";
+    if ($user_id != $_SESSION['id']) {
+        $sql = "UPDATE users SET role='$new_role' WHERE id=$user_id";
         $conn->query($sql);
     }
     header("Location: admin.php");
