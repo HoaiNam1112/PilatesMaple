@@ -25,10 +25,14 @@ include 'sidebar.php';
       background: #fff;
       margin-top: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      
     }
     th, td {
       border: 1px solid #ddd;
       padding: 8px;
+      text-align: left;        /* chữ căn trái */
+      vertical-align: top;  
+      
     }
     th {
       background: #1dae66;
@@ -90,7 +94,7 @@ include 'sidebar.php';
           <td><?php echo $row['id']; ?></td>
           <td><?php echo htmlspecialchars($row['title']); ?></td>
           <td><?php echo htmlspecialchars($row['description']); ?></td>
-          <td><?php echo number_format($row['price'], 0, ',', '.'); ?> đ</td>
+          <td><?php echo number_format($row['price'], 0, ',', '.'); ?> </td>
           <td>
             <a href="edit_course.php?id=<?php echo $row['id']; ?>" class="btn-edit">Sửa</a>
             <a href="delete_course.php?id=<?php echo $row['id']; ?>" class="btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
