@@ -15,7 +15,12 @@
 <body>
     <?php include 'header.php'?>
 
-    <h1 class="banner ">Bài Viết</h1>
+    <div class="banner">
+    <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
+  <div class="banner-text">
+    <h1>BÀI VIẾT</h1>
+  </div>
+    </div>
     <div class="container">
         <div class="row">
         <div class="col-md-4">
