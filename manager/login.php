@@ -51,8 +51,9 @@
         <p class="message">
           Chưa có tài khoản? <a href="../manager/register.php">Đăng ký</a>
         </p>
+        <p class="message">
         <a href="../page/home.php">Trang chủ</a> <br>
-
+        </p>
          <?php if (isset($error)) : ?>
       <p style="color:red; font-weight:bold; font-size:14px;"><?php echo $error; ?></p>
       <?php endif; ?>

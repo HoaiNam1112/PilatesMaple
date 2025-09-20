@@ -71,7 +71,7 @@ include 'sidebar.php';
   <!-- Main content -->
   <div class="main">
     <h1>Danh sách </h1>
-    <a class="btn btn-add" href="../admin/add_course.php">➕ Thêm khóa học</a>
+    <a class="btn btn-add" href="../admin/add_course.php">Thêm khóa học</a>
     <table>
       <tr>
         <th>Mã khóa học</th>

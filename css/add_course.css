@@ -19,6 +19,7 @@ input, textarea, button {
   color: white;
   border: none;
   cursor: pointer;
+  text-decoration: none;
 }
 .back {
   display: inline-block;

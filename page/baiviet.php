@@ -1,4 +1,3 @@
-<?php include 'header.php'?>
 <?php include '../page/connect.php';
 ?>
 
@@ -14,6 +13,8 @@
 
 </head>
 <body>
+    <?php include 'header.php'?>
+
     <h1 class="banner ">Bài Viết</h1>
     <div class="container">
         <div class="row">
