@@ -49,11 +49,11 @@ $result = $conn->query($sql);
       background: #b52a37;
     }
     .btn-primary {
-      background: #007bff;
+      background: #3ba844ff;
       color: #fff;
     }
     .btn-primary:hover {
-      background: #0056b3;
+      background: #4fc379ff;
     }
     .text-muted {
       color: #777;
