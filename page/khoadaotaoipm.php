@@ -121,7 +121,7 @@
                                 </li>
                                 <li>Bạn sẽ nhận được những gì sau khóa học đào tạo HLV Pilates của PĀRAGATE® Yoga & Pilates:</li>
 
-                               <li> Sự kết hợp đa dạng của các bài tập chủ đạo với Flex-Band ®, Fitness Circle ®, Mini Stability Ball ™, Foam Roller ™</li>
+                               <li> Sự kết hợp đa dạng của các bài tập chủ đạo với Flex-Band , Fitness Circle ®, Mini Stability Ball ™, Foam Roller ™</li>
                                 <li>Nắm chắc kiến thức và các kỹ năng để phát triển các chương trình Pilates Matwork một cách hiệu quả.</li>
                                 <li>Kỹ năng đứng lớp chuyên nghiệp, giao tiếp, phân tích quan sát điều chỉnh các tư thế cho học viên nhằm nâng cao hiệu suất tập luyện</li>
                                 <li>63 bài tập có cải biên trên từng loại cơ thể và cách kết hợp các thiết bị để hỗ trợ tăng cường các bài luyện tập.</li>

@@ -122,7 +122,7 @@
                                 <li>139 bài tập cùng với sửa đổi cho cụ thể cho các loại cơ thể, vấn đề tư thế và điều kiện</li>
                                 <li>Thiết kế bài tập từ Cơ bản tới Trung cấp. Sử dụng hiệu quả máy Reformer để tăng cường sự ổn định và sức mạnh của cơ thể, điều hòa ngoại vi, ổn định khớp, tính linh hoạt, cân bằng và phối hợp.</li>
                                 <li>Kỹ năng giao tiếp và quan sát hiệu quả. Gợi ý bằng lời nói và hình ảnh để nâng cao hiệu suất và động lực cho học viên.</li>
-                                <li>Kỹ năng đứng lớp: giao tiếp và quan sát. Hiệu quả bằng lời nói và hình ảnh để nâng cao hiệu suất và tạo động lực cho học viên</li>
+                                <li>Kỹ năng đứng lớp: giao tiếp và quan sát. Hiệu quả bằng lời nói và hình ảnh để nâng cao hiệu suất và tạo động lực cho học viên.</li>
                                 <li>Cách kết hợp thiết bị kháng lực để hỗ trợ và tăng cường các bài tập.</li>
                         </p>
                     </div>
