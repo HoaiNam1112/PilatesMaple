@@ -12,7 +12,7 @@
 <body>
     <section class="banner">
         <div class="container-fluid">
-            <img src="../pic/khoadaotaojrbanner.jpg" alt="Banner" class="img-banner">
+            <img src="../pic/khoadaotaoipm.jpg" alt="Banner" class="img-banner">
         </div>
     </section>
     <section>
@@ -21,10 +21,10 @@
             <div class="dau">
                 <h4 >GIỚI THIỆU KHÓA HỌC</h4>
             <p >
-                Khóa học STOTT PILATES® mang tên STOTT PILATES® Intensive Reformer (IR)
+                Khóa đào tạo IMP (STOTT PILATES ® Intensive Mat-Plus ™ khóa đào tạo giáo viên thảm Pilates Cơ bản và Trung Cấp của STOTT PILATES®)
                 <br>
                 
-                Khóa học này dành cho những ai đang làm việc trong lĩnh vực thể dục hoặc vận động, cũng như những ai muốn được đào tạo bài bản để trở thành Huấn luyện viên dạy máy Intensive Reformer Pilates. Dựa trên những kiến thức của bạn về thể dục và vận động, khóa học được thiết kế trình độ cơ bản và trung cấp STOTT PILATES® giáo viên máy Reformer để bạn có thể thiết kế những bài tập cho cả nhân hoặc nhóm phù hợp với đa dạng khách hàng. Bạn sẽ có kiến thức nền tảng vững chắc và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates máy Reformer hiệu quả nhất cho học viên.
+                Khóa học này dành cho những ai đang làm việc trong lĩnh vực thể dục hoặc vận động, cũng như những ai muốn được đào tạo bài bản để trở thành Huấn luyện viên dạy thảm Pilates. Dựa trên những kiến thức của bạn về thể dục và vận động, khóa học được thiết kế trình độ cơ bản và trung cấp STOTT PILATES® giáo viên thảm để bạn có thể thiết kế những bài tập cho cả nhân hoặc nhóm phù hợp với đa dạng khách hàng. Bạn sẽ có kiến thức nền tảng vững chắc và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates thảm hiệu quả nhất cho học viên.
                 <br>
                 Địa điểm: 
                 <br>
@@ -101,11 +101,11 @@
             </div>
         </div>
     </section>
-    <section class="hero d-flex align-items-center justify-content-center text-center">
+    <section class="hero  d-flex align-items-center justify-content-center text-center">
         <div class="container ">
             <div class="row">
                 <div class="col-md-4 offset-md-2">
-                    <img src="../pic/khoadaotaojrhero.jpg" alt="Ảnh" class="imgdinh img-fluid">
+                    <img src="../pic/khoadaotaoipm1.jpg" alt="Ảnh" class="imgdinh img-fluid">
                 </div>
                 <div class="col-md-4 ">
                     <div class="custom-box">
@@ -115,14 +115,20 @@
                         </h4>
                         
                         <p class="card-text mb-4">
-                                <li>INTENSIVE REFORMER (IR) Xây dựng dựa trên kiến thức với một nền tảng vững chắc và các kỹ năng cần thiết để phát triển các chương trình Pilates Reformer hiệu quả.</li>
-                                <li>Năm nguyên tắc cơ bản của STOTT PILATES</li>
-                                <li>Lý thuyết và thực hành phân tích tư thế</li>
-                                <li>139 bài tập cùng với sửa đổi cho cụ thể cho các loại cơ thể, vấn đề tư thế và điều kiện</li>
-                                <li>Thiết kế bài tập từ Cơ bản tới Trung cấp. Sử dụng hiệu quả máy Reformer để tăng cường sự ổn định và sức mạnh của cơ thể, điều hòa ngoại vi, ổn định khớp, tính linh hoạt, cân bằng và phối hợp.</li>
-                                <li>Kỹ năng giao tiếp và quan sát hiệu quả. Gợi ý bằng lời nói và hình ảnh để nâng cao hiệu suất và động lực cho học viên.</li>
-                                <li>Kỹ năng đứng lớp: giao tiếp và quan sát. Hiệu quả bằng lời nói và hình ảnh để nâng cao hiệu suất và tạo động lực cho học viên</li>
-                                <li>Cách kết hợp thiết bị kháng lực để hỗ trợ và tăng cường các bài tập.</li>
+                                <li>
+                                    Khóa đào tạo huấn luyện viên STOTT PILATES® cung cấp cho bạn những kiến thức nền tảng và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates thảm hiệu quả nhất cho học viên.
+    
+                                </li>
+                                <li>Bạn sẽ nhận được những gì sau khóa học đào tạo HLV Pilates của PĀRAGATE® Yoga & Pilates:</li>
+
+                               <li> Sự kết hợp đa dạng của các bài tập chủ đạo với Flex-Band ®, Fitness Circle ®, Mini Stability Ball ™, Foam Roller ™</li>
+                                <li>Nắm chắc kiến thức và các kỹ năng để phát triển các chương trình Pilates Matwork một cách hiệu quả.</li>
+                                <li>Kỹ năng đứng lớp chuyên nghiệp, giao tiếp, phân tích quan sát điều chỉnh các tư thế cho học viên nhằm nâng cao hiệu suất tập luyện</li>
+                                <li>63 bài tập có cải biên trên từng loại cơ thể và cách kết hợp các thiết bị để hỗ trợ tăng cường các bài luyện tập.</li>
+                                <li>Các bài tập theo các lớp cơ liên quan đến việc thiết kế một chương trình giảng dạy hiệu quả.</li>
+                                <li>Khả năng thiết kế linh hoạt các bài tập cho cá nhân và nhóm.</li>
+                                <li>Có trong tay những nguyên tắc nằm lòng từ cơ bản đến nâng cao về sức mạnh.</li>
+                                <li>Chứng chỉ Quốc tế có GIÁ TRỊ TOÀN CẦU được cấp bởi Merrithew</li>
                         </p>
                     </div>
                 </div>
@@ -161,32 +167,46 @@
     <section class="hero d-flex align-items-center justify-content-center ">
         <div class="container ">
             <div class="row">
-            <div class ="col-md-6 offset-md-3 lienhe">
-                <h4 class="card-title text-center mb-3">LIÊN HỆ VỚI CHÚNG TÔI</h4>
-                <form method="post" class="mt-3">
-                    <div class="mb-3">
-                        <label for="contactFullname" class="form-label">Họ và tên</label>
-                            <input type="text" class="form-control" id="contactFullname" name="fullname" placeholder="Nguyễn Văn A">
-                                                </div>
-        
-                                                <div class="mb-3">
-                                                    <label for="contactEmail" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@gmail.com">
-                                                </div>
-        
-                                                <div class="mb-3">
-                                                    <label for="content" class="form-label">Nội dung liên hệ </label>
-                                                    <textarea class="form-control" id="content" name="content" rows="4" placeholder="Xin vui lòng mô tả chi tiết nội dung bạn cần hỗ trợ..."></textarea>
-                        </div>
-        
-                        <div class="text-center mt-4">
-                        <button type="submit" class="btn btn-dark" name="contact_form">
-                            <i class="bi bi-send"></i> Gửi Liên Hệ
-                        </button>
+            <div class="col-md-6 offset-md-3 lienhe">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h2 class="card-title h4 border-bottom text-center pb-2">
+                             Liên Hệ Với Chúng Tôi
+                        </h2>
+                        <?php if (!empty($contactSuccess)): ?>
+                            <div class="alert alert-success mt-3"><?= $contactSuccess ?></div>
+                        <?php endif; ?>
+
+                        <?php if (!empty($contactError)): ?>
+                            <div class="alert alert-danger mt-3"><?= $contactError ?></div>
+                        <?php endif; ?>
+
+                        <form method="post" class="mt-3">
+                            <div class="mb-3">
+                                <label for="contactFullname" class="form-label">Họ và tên</label>
+                                <input type="text" class="form-control" id="contactFullname" name="fullname" placeholder="Nguyễn Văn A">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="contactEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@gmail.com">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="content" class="form-label">Nội dung liên hệ </label>
+                                <textarea class="form-control" id="content" name="content" rows="4" placeholder="Xin vui lòng mô tả chi tiết nội dung bạn cần hỗ trợ..."></textarea>
+                            </div>
+
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-dark" name="contact_form">
+                                     Gửi Liên Hệ
+                                </button>
+                            </div>
+                        </form>
                     </div>
+                </div>
                                     
-                </form>
-            </div>
+              
         </div>
         </div>
     </section>

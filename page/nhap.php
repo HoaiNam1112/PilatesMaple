@@ -99,11 +99,3 @@
 </body>
 
 </html>
-benngoai
-.hero {
-  width: 100%;
-  height: 100vh;
-  background: url("../pic/khoadaotaohero.jpg") no-repeat center center;
-  background-size: cover;
-  background-color: #6a615d;
-}
