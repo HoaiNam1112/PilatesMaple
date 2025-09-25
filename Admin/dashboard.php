@@ -1,15 +1,39 @@
-<?php
-session_start();
-include 'check_admin.php';
-include 'sidebar.php';
-?>
 <!DOCTYPE html>
 <html lang="vi">
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="../css/admin.css" />
   <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+    }
+    /* Sidebar */
+    .sidebar {
+      width: 220px;
+      background: #1dae66;
+      color: white;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      padding-top: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar a {
+      display: block;
+      padding: 12px 20px;
+      color: white;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      background: #14834d;
+    }
     /* Main */
     .main {
       margin-left: 220px;
@@ -25,14 +49,10 @@ include 'sidebar.php';
       background: #fff;
       margin-top: 20px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      
     }
     th, td {
       border: 1px solid #ddd;
       padding: 8px;
-      text-align: left;        /* chữ căn trái */
-      vertical-align: top;  
-      
     }
     th {
       background: #1dae66;
@@ -72,10 +92,19 @@ include 'sidebar.php';
   </style>
 </head>
 <body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Admin</h2>
+    <a href="manager_schedule.php"> Quản lí lịch học</a>
+    <a href="ql_form_lien_he.php"> Quản lí form liên hệ</a>
+    <a href="ql_phan_quyen.php"> Quản lí phân quyền</a>
+     <div class="add"><a href="../page/home.php"> Trang chủ</a></div>
+  </div>
+
   <!-- Main content -->
   <div class="main">
     <h1>Danh sách </h1>
-    <a class="btn btn-add" href="../admin/add_course.php">Thêm khóa học</a>
+    <a class="btn btn-add" href="../admin/add_course.php">➕ Thêm khóa học</a>
     <table>
       <tr>
         <th>Mã khóa học</th>
@@ -94,7 +123,7 @@ include 'sidebar.php';
           <td><?php echo $row['id']; ?></td>
           <td><?php echo htmlspecialchars($row['title']); ?></td>
           <td><?php echo htmlspecialchars($row['description']); ?></td>
-          <td><?php echo number_format($row['price'], 0, ',', '.'); ?> </td>
+          <td><?php echo number_format($row['price'], 0, ',', '.'); ?> đ</td>
           <td>
             <a href="edit_course.php?id=<?php echo $row['id']; ?>" class="btn-edit">Sửa</a>
             <a href="delete_course.php?id=<?php echo $row['id']; ?>" class="btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>

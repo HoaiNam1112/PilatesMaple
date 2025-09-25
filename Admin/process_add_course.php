@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     echo "<script>
             alert('Thêm khóa học thành công!');
-            window.location.href='dashboard.php';
+            window.location.href='manager_course.php';
           </script>";
 }
 ?>

@@ -7,7 +7,7 @@
 </head>
 <body class="bg-light">
   <div class="container mt-4">
-    <h2> Thêm Khóa học</h2>
+    <h2>➕ Thêm Khóa học</h2>
     <form method="POST" action="process_add_course.php">
       <div class="mb-3">
         <label>Tên khóa học</label>
@@ -22,7 +22,7 @@
         <input type="number" step="0.01" name="price" class="form-control" required>
       </div>
       <button type="submit" class="btn btn-success">Lưu</button>
-      <a href="dashboard.php" class="btn " >Hủy</a>
+      <a href="manager_course.php" class="back" >Hủy</a>
     </form>
   </div>
 </body>
