@@ -73,13 +73,6 @@ body {
 }
 
 .schedule-table th {
-  background: #f7f7f7;
-  font-weight: bold;
-  color: #050d7b;
-}
-
-.schedule-table tr:nth-child(even) {
-  background: #e7e1a2;
   padding: 14px;
   background: linear-gradient(#6a11cb, #2575fc);
   color: white;

@@ -1,5 +1,4 @@
 <?php
-require('header.php');
 require "connect.php";
 mysqli_set_charset($conn, 'UTF8');
 ?>
