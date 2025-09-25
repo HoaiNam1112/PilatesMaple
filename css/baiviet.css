@@ -4,11 +4,15 @@ body {
   background: #fafafa;
   color: #333;
 }
+.hero {
+  background: url("../pic/bnhlv.jpg") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient(rgba(106, 97, 93, 0.5), rgba(106, 97, 93, 0.5)),
+    url("../pic/bnhlv.jpg") center/cover no-repeat;
+}
 
 .banner {
-  background: linear-gradient(135deg, #d8a58a, #f2e3dc);
   color: #fff;
-  text-align: center;
   padding: 80px 20px;
 }
 .banner h1 {

@@ -14,13 +14,13 @@
 </head>
 <body>
     <?php include 'header.php'?>
-
-    <div class="banner">
-    <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
-  <div class="banner-text">
-    <h1>BÀI VIẾT</h1>
-  </div>
-    </div>
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>BÀI VIẾT</h1>
+            </div>
+        </div>
+    </section>
     <div class="container">
         <div class="row">
         <div class="col-md-4">

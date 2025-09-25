@@ -72,7 +72,7 @@
            <div class="dau">
                 <h4>về PĀRAGATE®</h4>
         <p>
-            PĀRAGATE® Yoga & Pilates là trung tâm đào tạo  Pilates chuyên nghiệp.
+            PĀRAGATE Yoga & Pilates là trung tâm đào tạo  Pilates chuyên nghiệp.
             <br>
             Các khóa đào tạo của chúng tôi được phân cấp từ cơ bản đến nâng cao để phù hợp với trình độ của người tập.
             Thêm vào đó, PĀRAGATE® Yoga & Pilates còn là địa chỉ đào tạo HLV Pilates quốc tế đầu tiên
@@ -120,7 +120,7 @@
                                 <li>Năm nguyên tắc cơ bản của STOTT PILATES</li>
                                 <li>Lý thuyết và thực hành phân tích tư thế</li>
                                 <li>139 bài tập cùng với sửa đổi cho cụ thể cho các loại cơ thể, vấn đề tư thế và điều kiện</li>
-                                <li>Thiết kế bài tập từ Cơ bản tới Trung cấp. Sử dụng hiệu quả máy Reformer để tăng cường sự ổn định và sức mạnh của cơ thể, điều hòa ngoại vi, ổn định khớp, tính linh hoạt, cân bằng và phối hợp.</li>
+                                <li>Thiết kế bài tập từ Cơ bản tới trung cấp. Sử dụng hiệu quả máy Reformer để tăng cường sự ổn định và sức mạnh của cơ thể, điều hòa ngoại vi, ổn định khớp, tính linh hoạt, cân bằng và phối hợp.</li>
                                 <li>Kỹ năng giao tiếp và quan sát hiệu quả. Gợi ý bằng lời nói và hình ảnh để nâng cao hiệu suất và động lực cho học viên.</li>
                                 <li>Kỹ năng đứng lớp: giao tiếp và quan sát. Hiệu quả bằng lời nói và hình ảnh để nâng cao hiệu suất và tạo động lực cho học viên.</li>
                                 <li>Cách kết hợp thiết bị kháng lực để hỗ trợ và tăng cường các bài tập.</li>
@@ -159,53 +159,6 @@
                 </div>
         </div>     
     </section>
-    <section class="hero d-flex align-items-center justify-content-center ">
-        <div class="container ">
-            <div class="row">
-            <div class="col-md-6 offset-md-3 lienhe">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h2 class="card-title h4 border-bottom text-center pb-2">
-                             Liên Hệ Với Chúng Tôi
-                        </h2>
-                        <?php if (!empty($contactSuccess)): ?>
-                            <div class="alert alert-success mt-3"><?= $contactSuccess ?></div>
-                        <?php endif; ?>
-
-                        <?php if (!empty($contactError)): ?>
-                            <div class="alert alert-danger mt-3"><?= $contactError ?></div>
-                        <?php endif; ?>
-
-                        <form method="post" class="mt-3">
-                            <div class="mb-3">
-                                <label for="contactFullname" class="form-label">Họ và tên</label>
-                                <input type="text" class="form-control" id="contactFullname" name="fullname" placeholder="Nguyễn Văn A">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="contactEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@gmail.com">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="content" class="form-label">Nội dung liên hệ </label>
-                                <textarea class="form-control" id="content" name="content" rows="4" placeholder="Xin vui lòng mô tả chi tiết nội dung bạn cần hỗ trợ..."></textarea>
-                            </div>
-
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-dark" name="contact_form">
-                                     Gửi Liên Hệ
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                                    
-              
-        </div>
-        </div>
-    </section>
-
 </body>
 
 </html>

@@ -116,7 +116,7 @@
                         
                         <p class="card-text mb-4">
                                 <li>
-                                    Khóa đào tạo huấn luyện viên STOTT PILATES® cung cấp cho bạn những kiến thức nền tảng và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates thảm hiệu quả nhất cho học viên.
+                                    Khóa đào tạo huấn luyện viên STOTT PILATES cung cấp cho bạn những kiến thức nền tảng và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates thảm hiệu quả nhất cho học viên.
     
                                 </li>
                                 <li>Bạn sẽ nhận được những gì sau khóa học đào tạo HLV Pilates của PĀRAGATE® Yoga & Pilates:</li>
@@ -164,53 +164,6 @@
                 </div>
         </div>     
     </section>
-    <section class="hero d-flex align-items-center justify-content-center ">
-        <div class="container ">
-            <div class="row">
-            <div class="col-md-6 offset-md-3 lienhe">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h2 class="card-title h4 border-bottom text-center pb-2">
-                             Liên Hệ Với Chúng Tôi
-                        </h2>
-                        <?php if (!empty($contactSuccess)): ?>
-                            <div class="alert alert-success mt-3"><?= $contactSuccess ?></div>
-                        <?php endif; ?>
-
-                        <?php if (!empty($contactError)): ?>
-                            <div class="alert alert-danger mt-3"><?= $contactError ?></div>
-                        <?php endif; ?>
-
-                        <form method="post" class="mt-3">
-                            <div class="mb-3">
-                                <label for="contactFullname" class="form-label">Họ và tên</label>
-                                <input type="text" class="form-control" id="contactFullname" name="fullname" placeholder="Nguyễn Văn A">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="contactEmail" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="contactEmail" name="contactEmail" placeholder="email@gmail.com">
-                            </div>
-
-                            <div class="mb-3">
-                                <label for="content" class="form-label">Nội dung liên hệ </label>
-                                <textarea class="form-control" id="content" name="content" rows="4" placeholder="Xin vui lòng mô tả chi tiết nội dung bạn cần hỗ trợ..."></textarea>
-                            </div>
-
-                            <div class="text-center mt-4">
-                                <button type="submit" class="btn btn-dark" name="contact_form">
-                                     Gửi Liên Hệ
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                                    
-              
-        </div>
-        </div>
-    </section>
-
 </body>
 
 </html>

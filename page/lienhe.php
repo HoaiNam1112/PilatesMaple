@@ -83,12 +83,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
 </head>
 <body>
     <?php include 'header.php'?>
-    <div class="banner">
-    <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
-  <div class="banner-text">
-    <h1>KẾT NỐI VỚI CHÚNG TÔI</h1>
-  </div>
-    </div>
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>KẾT NỐI VỚI CHÚNG TÔI</h1>
+            </div>
+        </div>
+    </section>
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-5 mb-4">
