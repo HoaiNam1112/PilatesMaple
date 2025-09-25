@@ -171,4 +171,3 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
 </body>
 </html>
 <?php include 'footer.php'?>
-<!-- lên -->
