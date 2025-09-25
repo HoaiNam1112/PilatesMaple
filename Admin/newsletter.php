@@ -1,7 +1,7 @@
 <?php
 session_start();
 include '../page/connect.php';
-include 'sidebar.php';
+include 'sibebar.php';
 
 // Nếu admin muốn xóa đăng ký
 if (isset($_GET['delete'])) {
@@ -26,8 +26,45 @@ $result = $conn->query($sql);
 <head>
   <meta charset="UTF-8">
   <title>Quản lý đăng ký nhận tin</title>
-  <link rel="stylesheet" href="../css/admin.css" />
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 20px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .banner {
+      width: auto;
+      background: #e1c197ff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background: #333;
+      color: #fff;
+    }
     tr:nth-child(even) {
       background: #f9f9f9;
     }
@@ -65,8 +102,8 @@ $result = $conn->query($sql);
   </style>
 </head>
 <body>
+  <div class="banner"> Danh sách đăng ký nhận tin </div>
   <div class="container">
-    <div class="banner"> Danh sách đăng ký nhận tin </div>
     <table>
       <thead>
         <tr>
