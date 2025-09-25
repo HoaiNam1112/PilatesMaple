@@ -13,8 +13,14 @@ mysqli_set_charset($conn, 'UTF8');
 </head>
 <body>
       <?php include 'header.php'; ?>   
-
+<div class="banner">
+    <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
+  <div class="banner-text">
+    <h1>LỊCH TẬP TẠI MAPLE</h1>
+  </div>
+    </div>
   <div class="container-lichtap">
+    <div class="lich-tap">
     <div class="lich-header">
         <h1>LỊCH TẬP TẠI MAPLE</h1>
     </div>
@@ -28,6 +34,7 @@ mysqli_set_charset($conn, 'UTF8');
           <option value="Advanced" <?php if(isset($_GET['level']) && $_GET['level']=="Advanced") echo "selected"; ?>>Advanced</option>
         </select>
       </form>
+    </div>
     </div>
     <div class="note">
       <strong>[UPDATE] LỊCH TẬP TUẦN 06/09/2025 </strong><br />
