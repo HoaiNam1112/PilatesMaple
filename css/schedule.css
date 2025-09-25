@@ -73,7 +73,6 @@ body {
 }
 
 .schedule-table th {
-<<<<<<< HEAD
   background: #f7f7f7;
   font-weight: bold;
   color: #050d7b;
@@ -81,7 +80,6 @@ body {
 
 .schedule-table tr:nth-child(even) {
   background: #e7e1a2;
-=======
   padding: 14px;
   background: linear-gradient(#6a11cb, #2575fc);
   color: white;
@@ -105,7 +103,6 @@ body {
   background: #ffeaa7;
   transition: 0.3s ease;
   cursor: pointer;
->>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
 }
 .banner {
   position: relative;
