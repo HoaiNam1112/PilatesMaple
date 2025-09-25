@@ -1,5 +1,4 @@
 .banner {
-  background-color: #e0e0e0; /* màu xám nhạt */
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
@@ -14,3 +13,10 @@
   letter-spacing: 2px;
   font-weight: bold;
 }
+.hero {
+  background: url("../pic/bnhlv.jpg") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient(rgba(106, 97, 93, 0.5), rgba(106, 97, 93, 0.5)),
+    url("../pic/bnhlv.jpg") center/cover no-repeat;
+}
+/* 1 */

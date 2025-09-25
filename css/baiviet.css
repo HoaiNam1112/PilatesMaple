@@ -1,5 +1,26 @@
 body {
-  background-color: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+}
+.hero {
+  background: url("../pic/bnhlv.jpg") no-repeat center center;
+  background-size: cover;
+  background: linear-gradient(rgba(106, 97, 93, 0.5), rgba(106, 97, 93, 0.5)),
+    url("../pic/bnhlv.jpg") center/cover no-repeat;
+}
+
+.banner {
+  color: #fff;
+  padding: 80px 20px;
+}
+.banner h1 {
+  margin: 0;
+  font-size: 42px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 .search-box {
   margin-top: 10px;
@@ -52,3 +73,4 @@ body {
 .post-card:hover {
   transform: translateY(-5px);
 }
+/* 1 */
