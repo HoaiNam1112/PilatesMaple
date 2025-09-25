@@ -25,6 +25,7 @@ header {
   width: auto;
   display: block;
 }
+
 .menu-center {
   display: flex;
   flex: 1;
@@ -88,6 +89,7 @@ header {
   color: #007bff;
   margin-left: 5px;
 }
+
 .menu-right li a {
   display: inline-block;
   padding: 6px 14px;
