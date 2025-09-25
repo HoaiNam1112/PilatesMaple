@@ -1,7 +1,7 @@
 
 <?php
 include('../page/connect.php');
-
+include 'sidebar.php';
 // Lấy danh sách khóa học
 $result = mysqli_query($conn, "SELECT * FROM courses ORDER BY id DESC");
 ?>
@@ -16,7 +16,7 @@ $result = mysqli_query($conn, "SELECT * FROM courses ORDER BY id DESC");
   <div class="container mt-4">
     <h2> Quản lý Khóa học</h2>
     <a href="add_course.php" class="btn-add"> Thêm Khóa học</a> <br> <br>
-     <a href="../admin/dashboard.php" class="btn-add">Trang chủ Admin</a>
+     
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>
