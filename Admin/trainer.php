@@ -1,8 +1,8 @@
 <?php
-session_start();
+//session_start();
 include '../page/connect.php';
-include 'check_admin.php';
-include 'sidebar.php';
+//include 'check_admin.php';
+
 $sql = "SELECT * FROM trainers";
 $result = $conn->query($sql);
 ?>
@@ -13,8 +13,30 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <title>Quản lý Huấn luyện viên</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<<<<<<< HEAD
   <link rel="stylesheet" href="../css/admin.css?v=2" />
+=======
+>>>>>>> e38a70a85c1ae0de381300c091185318f0b9c8a2
   <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5dc;
+      margin: 0;
+      padding: 0;
+    }
+    .container { margin: auto; padding:20px; }
+     /* Banner */
+    .banner {
+      width: auto;
+      background: #e1c197ff;
+      text-align: center;
+      padding: 40px 20px;
+      font-size: 40px;
+      font-weight: bold;
+      color: #333;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+      margin-bottom: 20px;
+    }
     .btn-add {
       display: inline-block;
       background-color: #28a745;
@@ -70,9 +92,10 @@ $result = $conn->query($sql);
   </style>
 </head>
 <body>
-  <div class="container">
+<?php include 'sidebar.php'; ?>
 
   <div class="banner">Quản lý Huấn luyện viên</div>
+  <div class="container">
   
     <!-- Nút sang trang thêm -->
     <a href="add_trainer.php" class="btn-add">

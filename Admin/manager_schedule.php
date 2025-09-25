@@ -15,7 +15,7 @@ $result = mysqli_query($conn, "SELECT * FROM schedules ORDER BY id DESC");
   <div class="container mt-4">
     <h2 class="mb-3"> Quản lý Lịch học </h2>
     <a href="add_schedule.php" class="btn btn-success mb-3">+ Thêm Lịch học</a>
-     <a href="../admin/dashboard.php" class="btn btn-success mb-3">Trang chủ Admin</a>
+    
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>

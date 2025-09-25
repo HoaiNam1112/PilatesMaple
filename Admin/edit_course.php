@@ -40,7 +40,7 @@ if (!$course) {
         <input type="number" step="0.01" name="price" class="form-control" value="<?php echo $course['price']; ?>" required>
       </div>
       <button type="submit" class="btn btn-success">Lưu</button>
-      <a href="../admin/manager_course.php" class="btn ">Hủy</a>
+      <a href="manage_courses.php" class="back">Hủy</a>
     </form>
   </div>
 </body>

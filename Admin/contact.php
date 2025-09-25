@@ -20,9 +20,60 @@ $result = $conn->query($sql);
 <head>
   <meta charset="UTF-8">
   <title>Quản lý liên hệ</title>
+<<<<<<< HEAD
   <link rel="stylesheet" href="../css/admin.css?v=2" />
+=======
+>>>>>>> e38a70a85c1ae0de381300c091185318f0b9c8a2
   <style>
-    .btn {
+  body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    margin-left: 240px; /* chừa khoảng cho sidebar */
+    padding: 20px;
+  }
+  .banner {
+    width: auto;
+    background: #1dae66;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  th, td {
+    border: 1px solid #eee;
+    padding: 12px;
+    text-align: left;
+  }
+  th {
+    background: #1dae66;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+  }
+  tr:nth-child(even) {
+    background: #f9f9f9;
+  }
+  tr.table-warning {
+    background: #fffbe6;
+  }
+  .btn {
     padding: 6px 12px;
     text-decoration: none;
     border-radius: 4px;
@@ -44,7 +95,7 @@ $result = $conn->query($sql);
   .text-center {
     text-align: center;
   }
-  </style>
+</style>
 </head>
 <body>
   <div class="container">

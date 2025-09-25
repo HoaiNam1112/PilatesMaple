@@ -1,36 +1,59 @@
 
-let currentIndex = 0;
-const slides = document.querySelector(".slides");
-const totalSlides = document.querySelectorAll(".slide").length;
+// JS
+let index = 0;
+const slides = document.querySelectorAll(".new-slide");
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+const dotsContainer = document.querySelector(".dots");
 
-function updateSlide() {
-  slides.style.transform = `translateX(${-currentIndex * 100}%)`;
+// Tạo dots
+slides.forEach((_, i) => {
+  const dot = document.createElement("span");
+  if (i === 0) dot.classList.add("active");
+  dot.addEventListener("click", () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+const dots = document.querySelectorAll(".dots span");
+
+function showSlide(n) {
+  slides.forEach(s => s.classList.remove("active"));
+  dots.forEach(d => d.classList.remove("active"));
+
+  slides[n].classList.add("active");
+  dots[n].classList.add("active");
+}
+
+function goToSlide(n) {
+  index = n;
+  showSlide(index);
 }
 
 function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  updateSlide();
+  index = (index + 1) % slides.length;
+  showSlide(index);
 }
 
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  updateSlide();
+function prevSlideFunc() {
+  index = (index - 1 + slides.length) % slides.length;
+  showSlide(index);
 }
 
-// Auto slide (optional)
-setInterval(nextSlide, 5000); // chuyển slide mỗi 5 giây
+// Auto chạy
+let autoSlide = setInterval(nextSlide, 4000);
 
 
-// Tự động chạy sau 2 giây
-setInterval(nextSlide, 5000);
+// Reset auto chạy khi có thao tác
+function resetAutoSlide() {
+  clearInterval(autoSlide);
+  autoSlide = setInterval(nextSlide, 4000);
+}
 
-// Nút điều khiển
+
+// JS cho Swiper
 document.addEventListener("DOMContentLoaded", function () {
   const sliderEl = document.querySelector(".pp-swiper-slider");
-
   if (sliderEl) {
     const settings = JSON.parse(sliderEl.getAttribute("data-slider-settings"));
-
     new Swiper(sliderEl, {
       ...settings,
       on: {
@@ -42,24 +65,22 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Nút điều khiển địa chỉ
-
+// -
 document.addEventListener("DOMContentLoaded", function () {
-  const cards = document.querySelectorAll('.teacher-card');
+  const cards = document.querySelectorAll(".teacher-card");
 
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
+        entry.target.classList.add("visible");
         observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.2
-  });
+  }, { threshold: 0.2 });
 
   cards.forEach(card => observer.observe(card));
 });
+
 
 // 
 document.addEventListener("DOMContentLoaded", function () {
@@ -113,5 +134,4 @@ document.addEventListener("DOMContentLoaded", function () {
   elements.forEach(el => observer.observe(el));
 });
 
-// 
-
+// 1
