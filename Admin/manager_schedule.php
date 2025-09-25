@@ -48,3 +48,4 @@ $result = mysqli_query($conn, "SELECT * FROM schedules ORDER BY id DESC");
   </div>
 </body>
 </html>
+<!--  -->

@@ -45,3 +45,4 @@ if (!$course) {
   </div>
 </body>
 </html>
+<!--  -->
