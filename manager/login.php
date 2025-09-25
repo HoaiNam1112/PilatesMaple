@@ -27,7 +27,7 @@
         if ($user['role'] == 'admin') {
             header('Location: ../admin/dashboard.php'); 
         } else {
-            header('Location:../index.php'); 
+            header('Location:../page/home.php'); 
         }
         exit();
     } else {
@@ -51,7 +51,7 @@
         <p class="message">
           Chưa có tài khoản? <a href="../manager/register.php">Đăng ký</a>
         </p>
-        <a href="../index.php">Trang chủ</a> <br>
+        <a href="../page/home.php">Trang chủ</a> <br>
 
          <?php if (isset($error)) : ?>
       <p style="color:red; font-weight:bold; font-size:14px;"><?php echo $error; ?></p>

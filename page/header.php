@@ -1,9 +1,15 @@
+<?php 
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+?>
 <!DOCTYPE html>
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pilates Website</title>
+<<<<<<< HEAD
     <style>
       body {
         margin: 0;
@@ -96,6 +102,9 @@
         font-weight: 500;
       }
     </style>
+=======
+      <link rel="stylesheet" href="../css/header.css">
+>>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
   </head>
   <body>
     <header>
@@ -105,26 +114,43 @@
         </div>
 
         <ul class="menu-center">
-          <li><a href="home.php">TRANG CHỦ</a></li>
+          <li><a href="../page/home.php">TRANG CHỦ</a></li>
           <li>
             <a href="#">GIỚI THIỆU ▾</a>
             <ul>
               <li><a href="#">Về Maple</a></li>
+<<<<<<< HEAD
+=======
+              <li><a href="#">Các khóa học</a></li>
+>>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
               <li><a href="trainer.php">Đội ngũ huấn luyện viên</a></li>
             </ul>
           </li>
           <li><a href="#">LỊCH HỌC ▾</a>
           <ul>
               <li><a href="schedule.php">Lịch học tại Maple</a></li>
+<<<<<<< HEAD
               <li><a href="levels.php">Trình độ các lớp tập</a></li>
           </ul>
           </li>
           <li><a href="baiviet.php">BÀI VIẾT</a></li>
           <li><a href="#">LIÊN HỆ</a></li>
+=======
+              <li><a href="level.php">Trình độ các lớp tập</a></li>
+          </ul>
+          </li>
+          <li><a href="baiviet.php">BÀI VIẾT</a></li>
+          <li><a href="lienhe.php">LIÊN HỆ</a></li>
+>>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
         </ul>
         <ul class="menu-right">
-          <li><a href="#">ĐĂNG NHẬP</a></li>
-          <li><a href="#">ĐĂNG KÍ</a></li>
+          <?php if(isset($_SESSION['username'])): ?>
+          <li>Xin chào <strong><?php echo $_SESSION['username']; ?></strong></li>
+          <li><a href="../manager/logout.php">Đăng xuất</a></li>
+           <?php else: ?>
+          <li><a href="../manager/login.php">Đăng nhập</a></li>
+           <li><a href="../manager/register.php">Đăng kí</a></li>
+         <?php endif; ?>
         </ul>
       </nav>
     </header>

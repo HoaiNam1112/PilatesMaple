@@ -13,6 +13,8 @@ mysqli_set_charset($conn, 'UTF8');
   <link rel="stylesheet" href="../css/schedule.css">
 </head>
 <body>
+      <?php include 'header.php'; ?>   
+
   <div class="container-lichtap">
     <div class="lich-header">
         <h1>LỊCH TẬP TẠI MAPLE</h1>

@@ -2,64 +2,71 @@ body {
   font-family: "Segoe UI", sans-serif;
   margin: 0;
   padding: 0;
-  background: #fafafa;
+  background: #fdfdfd;
   color: #333;
 }
-
 .container-lichtap {
-  width: 85%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 1100px;
   margin: 30px auto;
   background: #fff;
   padding: 25px;
-  border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 1;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  position: relative;
+  overflow: hidden;
 }
+
 .lich-header {
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 }
 
 .lich-header h1 {
-  font-size: 2rem;
-  color: #444;
+  font-size: 2.5rem;
+  color: #2c3e50;
   margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .level-selector {
   text-align: center;
   margin-bottom: 20px;
 }
 .level-selector select {
-  padding: 6px 12px;
+  padding: 8px 14px;
   border-radius: 8px;
   border: 1px solid #ccc;
   font-size: 1rem;
   cursor: pointer;
+  background: #fff;
+  transition: 0.2s;
 }
+.level-selector select:hover {
+  border-color: #3498db;
+  box-shadow: 0 0 6px rgba(52, 152, 219, 0.6);
+}
+
 .note {
-  background: #fff8e1;
+  background: #fff3cd;
   padding: 15px;
-  border-left: 5px solid #fbc02d;
+  border-left: 6px solid #ffc107;
   margin-bottom: 25px;
   font-size: 1rem;
   line-height: 1.6;
+  border-radius: 8px;
 }
 
 .schedule-table {
   width: 100%;
   border-collapse: collapse;
   margin-top: 15px;
-}
-
-.schedule-table th,
-td {
-  padding: 12px;
-  border: 1px solid #ddd;
-  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
 }
 
 .schedule-table th {
+<<<<<<< HEAD
   background: #f7f7f7;
   font-weight: bold;
   color: #050d7b;
@@ -67,4 +74,29 @@ td {
 
 .schedule-table tr:nth-child(even) {
   background: #e7e1a2;
+=======
+  padding: 14px;
+  background: linear-gradient(#6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  font-size: 1.05rem;
+  letter-spacing: 1px;
+}
+.schedule-table td {
+  padding: 12px;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid #eee;
+}
+.schedule-table tr:nth-child(even) {
+  background: #f1f8ff;
+}
+.schedule-table tr:nth-child(odd) {
+  background: #ffffff;
+}
+.schedule-table tr:hover {
+  background: #ffeaa7;
+  transition: 0.3s ease;
+  cursor: pointer;
+>>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
 }
