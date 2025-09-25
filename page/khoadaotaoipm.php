@@ -1,4 +1,4 @@
-<?php include 'header.php'?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
+    <?php include 'header.php'?>
     <section class="banner">
         <div class="container-fluid">
             <img src="../pic/khoadaotaoipm.jpg" alt="Banner" class="img-banner">
@@ -168,3 +169,4 @@
 
 </html>
 <?php include 'footer.php'?>
+<!-- lên -->
