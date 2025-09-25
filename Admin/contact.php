@@ -20,7 +20,7 @@ $result = $conn->query($sql);
 <head>
   <meta charset="UTF-8">
   <title>Quản lý liên hệ</title>
-  <link rel="stylesheet" href="../css/admin.css" />
+  <link rel="stylesheet" href="../css/admin.css?v=2" />
   <style>
     .btn {
     padding: 6px 12px;

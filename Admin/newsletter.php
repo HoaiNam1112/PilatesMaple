@@ -26,7 +26,7 @@ $result = $conn->query($sql);
 <head>
   <meta charset="UTF-8">
   <title>Quản lý đăng ký nhận tin</title>
-  <link rel="stylesheet" href="../css/admin.css" />
+  <link rel="stylesheet" href="../css/admin.css?v=2" />
   <style>
     tr:nth-child(even) {
       background: #f9f9f9;

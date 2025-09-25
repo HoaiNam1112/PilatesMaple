@@ -30,7 +30,7 @@ include 'sidebar.php';
 <head>
     <meta charset="UTF-8">
     <title>Phân quyền người dùng</title>
-    <link rel="stylesheet" href="../css/admin.css" />
+    <link rel="stylesheet" href="../css/admin.css?v=2" />
     <style>
         select { 
             padding:5px; 

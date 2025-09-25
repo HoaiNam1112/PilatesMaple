@@ -13,7 +13,7 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <title>Quản lý Huấn luyện viên</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/admin.css" />
+  <link rel="stylesheet" href="../css/admin.css?v=2" />
   <style>
     .btn-add {
       display: inline-block;
