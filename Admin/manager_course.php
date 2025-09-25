@@ -15,8 +15,8 @@ $result = mysqli_query($conn, "SELECT * FROM courses ORDER BY id DESC");
 <body class="bg-light">
   <div class="container mt-4">
     <h2> Quản lý Khóa học</h2>
-    <a href="add_course.php" class="btn-add">+ Thêm Khóa học</a>
-    
+    <a href="add_course.php" class="btn-add"> Thêm Khóa học</a> <br> <br>
+     <a href="../admin/dashboard.php" class="btn-add">Trang chủ Admin</a>
     <table class="table table-bordered table-striped">
       <thead class="table-dark">
         <tr>

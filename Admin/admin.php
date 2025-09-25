@@ -1,17 +1,17 @@
 <?php
-//session_start();
+session_start();
 include '../page/connect.php';
-//include 'check_admin.php';
+include 'check_admin.php';
 
 
 // Xử lý cập nhật role
 if (isset($_POST['update_role'])) {
-    $user_id = intval($_POST['user_id']);
+    $user_id = intval($_POST['id']);
     $new_role = $_POST['role'];
 
     // Không cho đổi quyền của chính superadmin
-    if ($user_id != $_SESSION['user_id']) {
-        $sql = "UPDATE users SET role='$new_role' WHERE user_id=$user_id";
+    if ($user_id != $_SESSION['id']) {
+        $sql = "UPDATE users SET role='$new_role' WHERE id=$user_id";
         $conn->query($sql);
     }
     header("Location: admin.php");
@@ -30,47 +30,8 @@ include 'sidebar.php';
 <head>
     <meta charset="UTF-8">
     <title>Phân quyền người dùng</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="../css/admin.css?v=2" />
-=======
->>>>>>> e38a70a85c1ae0de381300c091185318f0b9c8a2
     <style>
-        body { 
-            font-family: Arial; 
-            background:#f5f5dc; 
-        }
-        .banner {
-            width: auto;
-            background: #e1c197ff;
-            text-align: center;
-            padding: 40px 20px;
-            font-size: 40px;
-            font-weight: bold;
-            color: #333;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-            margin-bottom: 20px;
-        }
-        .container { 
-            width:800px; 
-            margin:30px auto; 
-            background:#fff; 
-            padding:20px; 
-            border-radius:8px; 
-            box-shadow:0 2px 6px rgba(0,0,0,0.2);
-        }
-        table { 
-            width:100%; 
-            border-collapse:collapse; 
-        }
-        th, td { 
-            border:1px solid #ccc; 
-            padding:10px; 
-            text-align:center; 
-        }
-        th { 
-            background:#333; 
-            color:#fff; 
-        }
         select { 
             padding:5px; 
         }
@@ -88,8 +49,8 @@ include 'sidebar.php';
     </style>
 </head>
 <body>
-    <div class="banner"> Phân quyền người dùng</div>
     <div class="container">
+        <div class="banner"> Phân quyền người dùng</div>
         <table>
             <tr>
                 <th>Tên đăng nhập</th>
@@ -103,7 +64,7 @@ include 'sidebar.php';
                     <td>
                         <?php if ($row['role'] !== 'admin') { ?>
                             <form method="post" style="margin:0;">
-                                <input type="hidden" name="user_id" value="<?= $row['id'] ?>">
+                                <input type="hidden" name="id" value="<?= $row['id'] ?>">
                                 <select name="role">
                                     <option value="user" <?= $row['role']=='user'?'selected':'' ?>>User</option>
                                     <option value="admin" <?= $row['role']=='admin'?'selected':'' ?>>Admin</option>
