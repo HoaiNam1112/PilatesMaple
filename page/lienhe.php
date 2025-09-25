@@ -83,7 +83,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
 </head>
 <body>
     <?php include 'header.php'?>
-    <h1 class="banner mb-4">Kết Nối Với Chúng Tôi</h1>
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>KẾT NỐI VỚI CHÚNG TÔI</h1>
+            </div>
+        </div>
+    </section>
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-5 mb-4">
@@ -165,3 +171,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["contact_form"])) {
 </body>
 </html>
 <?php include 'footer.php'?>
+<!-- 1 -->

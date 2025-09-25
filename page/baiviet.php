@@ -14,8 +14,13 @@
 </head>
 <body>
     <?php include 'header.php'?>
-
-    <h1 class="banner ">Bài Viết</h1>
+    <section class="hero d-flex align-items-center justify-content-center text-center">
+        <div class="banner">
+            <div class="banner-text">
+                <h1>BÀI VIẾT</h1>
+            </div>
+        </div>
+    </section>
     <div class="container">
         <div class="row">
         <div class="col-md-4">
@@ -112,3 +117,4 @@ $conn->close();
 </body>
 </html>
 <?php include 'footer.php'?>
+<!-- 1 -->
