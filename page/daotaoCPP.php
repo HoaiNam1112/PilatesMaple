@@ -14,20 +14,20 @@ mysqli_set_charset($conn, 'UTF8');
 
 <body>
   <div class="banner">
+    <div class="banner-overlay"></div>
     <img src="../pic/young.jpg" alt="Banner Huấn Luyện Viên">
 
-    <div class="banner-1">
-      Khóa Đào Tạo
-    </div>
-
-    <div class="banner-text">
-      STOTT PILATES® Intensive Cadillac, Chair & Barrels (ICCB) 2024
-    </div>
-
-    <div class="ladi-group">
-      <h3 class="ladi-headline">Từ STOTT PILATES® - Số 1 Thế Giới</h3>
+    <div class="banner-content">
+      <h1 class="banner-title animate-text">Khóa Đào Tạo</h1>
+      <p class="banner-subtitle animate-text delay-1">
+        STOTT PILATES® Intensive Cadillac, Chair & Barrels (ICCB) 2024
+      </p>
+      <h3 class="banner-footer animate-text delay-2">
+        Từ STOTT PILATES® - Số 1 Thế Giới
+      </h3>
     </div>
   </div>
+
 
   <section class="course-wrapper">
     <div class="course-section">
@@ -487,6 +487,81 @@ mysqli_set_charset($conn, 'UTF8');
       });
     });
   </script>
+
+  <section class="benefit-section">
+    <div class="benefit-container">
+
+      <!-- Cột trái: Nội dung -->
+      <div class="benefit-content">
+        <h3>Học viên nhận được gì sau khóa học?</h3>
+        <p>
+          Tiếp nối khóa học <strong>Intensive Mat Plus (IMP)</strong> và
+          <strong>Intensive Reformer (IR)</strong>, Khóa học
+          <strong>Intensive Cadillac, Chair & Barrel (ICCB)</strong> mang tên
+          <em>The Intensive Cadillac, Chair & Barrel (ICCB)</em> cung cấp cho học viên
+          một Chương trình Đào tạo Pilates Toàn diện số 1 Thế giới.
+        </p>
+
+        <ul class="benefit-list">
+          <li>✨ Các bài tập chức năng để phát triển sức mạnh vùng cơ trọng tâm kháng lại áp lực của lò xo</li>
+          <li>✨ Cách áp dụng các nguyên tắc cơ bản của STOTT PILATES®</li>
+          <li>✨ Hiểu rõ hơn về bản chất chuyển động và mục tiêu tập luyện</li>
+          <li>✨ Cách để tăng cường sức mạnh cơ trong tâm, tăng sức mạnh vùng cơ ngoài và sử dụng máy móc cách linh hoạt</li>
+          <li>✨ Gợi ý và điều chỉnh máy móc, tư thế đảm bảo tính an toàn, hiệu quả</li>
+          <li>✨ Cách hỗ trợ cột sống khi uốn, gập bên hoặc duỗi ra</li>
+          <li>✨ Cách để Barrel áp dụng vào các bài tập cho toàn thân hoặc khắc phục tư thế sai</li>
+          <li>✨ Phát triển kỹ năng giao tiếp và quan sát hiệu quả, tạo động lực cho khách hàng</li>
+        </ul>
+      </div>
+
+      <!-- Cột phải: Hình ảnh -->
+      <div class="benefit-images">
+        <div class="img-box large">
+          <img src="../pic/cpp1.jpg" alt="Pilates 1">
+        </div>
+        <div class="img-box small">
+          <img src="../pic/cpp2.jpg" alt="Pilates 2">
+        </div>
+        <div class="img-box small">
+          <img src="../pic/cpp3.jpg" alt="Pilates 3">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="contact-section">
+    <div class="contact-overlay"></div>
+    <div class="contact-container">
+
+      <!-- Cột trái: Google Map -->
+      <div class="contact-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.6471599087973!2d105.8180090748039!3d21.006382988628894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ab2fa8f4d04f%3A0x8f6af29aebd67258!2sParagate%20Yoga%20%26%20Pilates%20Vi%E1%BB%87t%20Nam!5e0!3m2!1svi!2s!4v1695800000000!5m2!1svi!2s"
+          width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+
+      <!-- Cột phải: Form đăng ký -->
+      <div class="contact-form">
+        <h3>TRỞ THÀNH HUẤN LUYỆN VIÊN PILATES</h3>
+        <form>
+          <label for="name">Name *</label>
+          <input type="text" id="name" placeholder="Tên" required>
+
+          <label for="phone">Phone number *</label>
+          <input type="tel" id="phone" placeholder="Số điện thoại" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email">
+
+          <label for="message">Messenger</label>
+          <textarea id="message" placeholder="Lời nhắn"></textarea>
+
+          <button type="submit">ĐĂNG KÝ</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
 
 
 

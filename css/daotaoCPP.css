@@ -9,35 +9,71 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  filter: brightness(70%);
 }
 
-.banner-text,
-.banner-1 {
+.banner-overlay {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.45);
+  /* nền tối mờ */
+}
+
+.banner-content {
+  position: absolute;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
-  color: white;
+  transform: translate(-50%, -50%);
   text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.banner-title {
+  font-size: 56px;
+  font-weight: 800;
+  color: #ff2e88;
+  margin-bottom: 20px;
+  text-transform: uppercase;
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
-.banner-1 {
-  top: 35%;
-  font-family: Niramit, sans-serif;
-  font-size: 48px;
-  font-weight: bold;
-  line-height: 1.6;
-  color: rgb(232, 48, 140);
-  text-shadow: rgb(255, 255, 255) 1px 2px 3px;
-  -webkit-text-stroke: 0px rgb(199, 22, 111);
+.banner-subtitle {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 15px;
 }
 
-.banner-text {
-  top: 50%;
-  font-size: 22px;
-  font-weight: bold;
+.banner-footer {
+  font-size: 20px;
+  font-weight: 400;
+  color: #eee;
 }
+
+/* Hiệu ứng chữ */
+.animate-text {
+  opacity: 0;
+  transform: translateX(50px);
+  animation: slideIn 1s ease forwards;
+}
+
+.delay-1 {
+  animation-delay: 0.5s;
+}
+
+.delay-2 {
+  animation-delay: 1s;
+}
+
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
 
 .ladi-group {
   position: absolute;
@@ -229,4 +265,202 @@
 
 .accordion-header.active+.accordion-content {
   padding: 15px 20px;
+}
+
+.benefit-section {
+  padding: 60px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.benefit-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.benefit-content h3 {
+  font-size: 1.8em;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.benefit-content p {
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.benefit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.benefit-list li {
+  margin-bottom: 12px;
+  font-size: 1em;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Cột ảnh */
+.benefit-images {
+  display: grid;
+  grid-template-areas:
+    "large small1"
+    "large small2";
+  gap: 15px;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.img-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.img-box:hover img {
+  transform: scale(1.1);
+}
+
+.large {
+  grid-area: large;
+  height: 400px;
+}
+
+.small {
+  height: 190px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .benefit-container {
+    grid-template-columns: 1fr;
+  }
+
+  .benefit-images {
+    grid-template-areas: none;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .large,
+  .small {
+    height: 200px;
+  }
+}
+
+.contact-section {
+  position: relative;
+  padding: 80px 20px;
+  background: url("../pic/cpp2.jpg") center/cover no-repeat;
+}
+
+.contact-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+
+}
+
+.contact-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.contact-map iframe {
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-form {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form h3 {
+  font-size: 1.4em;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.contact-form h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background: #a88c4e;
+  margin: 10px auto;
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 600;
+  color: #444;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+}
+
+.contact-form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.contact-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #a88c4e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: #8c743b;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-map iframe {
+    height: 250px;
+  }
 }
