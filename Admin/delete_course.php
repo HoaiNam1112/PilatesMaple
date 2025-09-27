@@ -7,7 +7,7 @@ if (isset($_GET['id'])) {
 
     echo "<script>
             alert('Xóa khóa học thành công!');
-            window.location.href='dashboard.php';
+            window.location.href='manager_course.php';
           </script>";
 }
 ?>
