@@ -112,14 +112,13 @@
     <div class="footer-col">
       <h4>VỀ CHÚNG TÔI</h4>
       <ul>
-        <li><a href="#">Giới Thiệu</a></li>
-        <li><a href="#">Các Dịch Vụ</a></li>
-        <li><a href="#">Giáo Viên</a></li>
-        <li><a href="#">Hội Thảo</a></li>
+        <li><a href="../page/home.php">Giới Thiệu</a></li>
+        <li><a href="../page/shcedule.php">Lịch học</a></li>
+        <li><a href="../page/lienhe.php">Liên hệ</a></li>
       </ul>
     </div>
     <div class="footer-col">
-      <h4>LỊCH HỌC</h4>
+      <h4>KHÓA HỌC</h4>
       <ul>
         <li><a href="#">Lịch Học Yoga</a></li>
         <li><a href="#">Lịch Học Pilates</a></li>

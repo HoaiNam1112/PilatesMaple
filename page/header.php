@@ -23,22 +23,18 @@ if (session_status() == PHP_SESSION_NONE) {
       <ul class="menu-center">
         <li><a href="../page/home.php">TRANG CHỦ</a></li>
         <li>
-          <a href="#">GIỚI THIỆU ▾</a>
-          <ul>
-            <li><a href="#">Về Maple</a></li>
-            <li><a href="trainer.php">Đội ngũ huấn luyện viên</a></li>
-          </ul>
-        </li>
-        <li>
           <a href="#">KHÓA HỌC ▾</a>
           <ul>
             <li><a href="daotaoCPP.php">KHÓA ĐÀO TẠO CPP</a></li>
-            <li><a href="course2.php">KHÓA ĐÀO TẠO 2</a></li>
-            <li><a href="course3.php">KHÓA ĐÀO TẠO 3</a></li>
+            <li><a href="khoadaotaojr.php">KHÓA ĐÀO TẠO JR</a></li>
+            <li><a href="khoadaotaoipm.php">KHÓA ĐÀO TẠO IPM</a></li>
           </ul>
         </li>
         <li>
-          <a href="#">LỊCH HỌC ▾</a>
+          <a href="trainer.php">HUẤN LUYỆN VIÊN</a>
+        </li>
+        <li>
+          <a href="#">LỊCH HỌC</a>
           <ul>
             <li><a href="schedule.php">Lịch học tại Maple</a></li>
             <li><a href="level.php">Trình độ các lớp tập</a></li>
@@ -60,5 +56,6 @@ if (session_status() == PHP_SESSION_NONE) {
     </nav>
   </header>
 </body>
-
 </html> 
+ 
+

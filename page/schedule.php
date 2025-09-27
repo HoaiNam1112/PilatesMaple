@@ -13,8 +13,14 @@ mysqli_set_charset($conn, 'UTF8');
 </head>
 <body>
       <?php include 'header.php'; ?>   
-
+<div class="banner">
+    <img src="../pic/bnhlv.jpg" alt="Banner Huấn Luyện Viên">
+  <div class="banner-text">
+    <h1>LỊCH TẬP TẠI MAPLE</h1>
+  </div>
+    </div>
   <div class="container-lichtap">
+    <div class="lich-tap">
     <div class="lich-header">
         <h1>LỊCH TẬP TẠI MAPLE</h1>
     </div>
@@ -29,10 +35,12 @@ mysqli_set_charset($conn, 'UTF8');
         </select>
       </form>
     </div>
+    </div>
     <div class="note">
       <strong>[UPDATE] LỊCH TẬP TUẦN 06/09/2025 </strong><br />
       Khởi động tuần mới thật chăm chỉ nha cả nhà<br />
       Lịch tập sẽ cập nhật thường xuyên<br />
+      Hãy chăm sóc và bảo vệ sức khỏe của bạn cùng Maple Pilates bạn nhé!<br />
     </div>
     <table class="schedule-table">
       <tr>
