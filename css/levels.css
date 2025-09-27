@@ -10,7 +10,6 @@ body {
   color: #333;
   background: #f9f9f9;
 }
-<<<<<<< HEAD
 .header-levels {
   width: 100%;
   background: #006666;
@@ -31,9 +30,6 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
-=======
->>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
-
 .container-levels {
   width: 90%;
   max-width: 1100px;
@@ -77,8 +73,6 @@ body {
   border-radius: 10px;
   object-fit: cover;
 }
-<<<<<<< HEAD
-=======
 .banner {
   position: relative;
   width: 100%;
@@ -113,4 +107,3 @@ body {
   max-width: 700px;
   margin: 0 auto;
 }
->>>>>>> 40ee619a7c1cddf1989d156d34067d598231bd0a
