@@ -169,4 +169,3 @@
 
 </html>
 <?php include 'footer.php'?>
-<!-- 2 -->
