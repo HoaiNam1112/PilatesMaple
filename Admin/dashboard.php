@@ -52,18 +52,17 @@ include 'sidebar.php';
       color: white;
     }
     .btn-add:hover { background: #14834d; }
-   .btn-edit {
-  color: #ab102c;
-  border-radius: 5px; 
-  text-decoration :none;
-}
+    .btn-edit {
+      color: #ab102c;
+      border-radius: 5px; 
+      text-decoration :none;
+    }
     .btn-update:hover { background: #217dbb; }
-   .btn-delete {
-
-  color: #dfc710ff;
- border-radius: 1px; 
-   text-decoration :none;
-}
+    .btn-delete {
+      color: #dfc710ff;
+      border-radius: 1px; 
+      text-decoration :none;
+    }
     .btn-delete:hover { background: darkred; }
   </style>
 </head>

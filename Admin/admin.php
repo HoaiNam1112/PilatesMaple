@@ -70,12 +70,12 @@ include 'sidebar.php';
                                     <option value="admin" <?= $row['role']=='admin'?'selected':'' ?>>Admin</option>
                                 </select>
                             </form>
-                        <?php } else { ?>
-                            (Không thể đổi)
-                        <?php } ?>
                     </td>
                     <td><button type="submit" name="update_role">Cập nhật</button></td>
-                </tr>
+                    </tr>
+                    <?php } else { ?>
+                            (Không thể đổi)
+                        <?php } ?>
             <?php } ?>
         </table>
     </div>
