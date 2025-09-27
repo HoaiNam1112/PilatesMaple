@@ -39,7 +39,7 @@
 <body>
   <div class="sidebar">
     <h2>Admin</h2>
-    <a href="../admin/dashboard.php">Trang chủ Admin</a>
+    <a href="dashboard.php">Trang chủ Admin</a>
     <a href="manager_schedule.php"> Quản lí lịch học</a>
     <a href="trainer.php"> Quản lý huấn luyện viên </a>
     <a href="contact.php"> Quản lí form liên hệ</a>

@@ -44,7 +44,7 @@ if (isset($_POST['update'])) {
     <title>Sửa Huấn luyện viên</title>
     <style>
         body {
-            background-color: rgba(237, 230, 192, 1);
+            background-color: rgba(142, 214, 142, 1);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -81,6 +81,7 @@ if (isset($_POST['update'])) {
         }
         textarea {
             resize: vertical;
+            min-height: 150px;
         }
         .btn-row {
             display: flex;

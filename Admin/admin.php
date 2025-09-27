@@ -30,7 +30,7 @@ include 'sidebar.php';
 <head>
     <meta charset="UTF-8">
     <title>Phân quyền người dùng</title>
-    <link rel="stylesheet" href="../css/admin.css?v=2" />
+    <link rel="stylesheet" href="../css/admin.css" />
     <style>
         select { 
             padding:5px; 
@@ -69,12 +69,12 @@ include 'sidebar.php';
                                     <option value="user" <?= $row['role']=='user'?'selected':'' ?>>User</option>
                                     <option value="admin" <?= $row['role']=='admin'?'selected':'' ?>>Admin</option>
                                 </select>
-                                <button type="submit" name="update_role">Cập nhật</button>
                             </form>
                         <?php } else { ?>
                             (Không thể đổi)
                         <?php } ?>
                     </td>
+                    <td><button type="submit" name="update_role">Cập nhật</button></td>
                 </tr>
             <?php } ?>
         </table>
