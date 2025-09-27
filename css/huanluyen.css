@@ -183,3 +183,25 @@ body {
 .close:hover {
   color: #000;
 }
+.trainer-video {
+  max-width: 90%;
+  margin: 40px auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.trainer-video video,
+.trainer-video iframe {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: none;
+}
+.team-caption {
+  margin-top: 12px;
+  font-size: 19px;
+  color: #5f5c5c;
+  font-style: italic;
+  text-align: center;
+}
