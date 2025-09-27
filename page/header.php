@@ -33,8 +33,8 @@ if (session_status() == PHP_SESSION_NONE) {
           <a href="#">KHÓA HỌC ▾</a>
           <ul>
             <li><a href="daotaoCPP.php">KHÓA ĐÀO TẠO CPP</a></li>
-            <li><a href="course2.php">KHÓA ĐÀO TẠO 2</a></li>
-            <li><a href="course3.php">KHÓA ĐÀO TẠO 3</a></li>
+            <li><a href="khoadaotaojr.php">KHÓA ĐÀO TẠO JR</a></li>
+            <li><a href="khoadaotaoipm.php">KHÓA ĐÀO TẠO IPM</a></li>
           </ul>
         </li>
         <li>

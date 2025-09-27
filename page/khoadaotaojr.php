@@ -40,7 +40,7 @@
     <section class="so1">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 delay-1">
                     <h4>
                                 TẠI SAO CHỌN
                                 <br>
@@ -57,7 +57,7 @@
 
                 </div>
             
-            <div class="col-md-6">
+            <div class="col-md-6 delay-2">
             <img src="../pic/khoadaotaojr.png" 
             alt="khoadaotaojr"
             class="img-fluid"
