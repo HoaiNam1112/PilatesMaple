@@ -46,7 +46,7 @@ header {
   font-weight: 500;
 }
 
-.menu-center li:hover > ul {
+.menu-center li:hover>ul {
   display: block;
 }
 
