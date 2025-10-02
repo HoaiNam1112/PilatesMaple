@@ -10,7 +10,6 @@ include 'sidebar.php';
   <title>Admin Dashboard</title>
   <link rel="stylesheet" href="../css/admin.css" />
   <style>
-    /* Main */
     .main {
       margin-left: 220px;
       padding: 20px;
