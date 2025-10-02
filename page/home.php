@@ -407,7 +407,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           }
         });
       }, {
-        threshold: 0.2
+        threshold: 0.9
       });
 
       elements.forEach(el => observer.observe(el));
