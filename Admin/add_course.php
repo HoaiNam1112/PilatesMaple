@@ -22,8 +22,9 @@
         <input type="number" step="0.01" name="price" class="form-control" required>
       </div>
       <button type="submit" class="btn btn-success">Lưu</button>
-      <a href="manager_course.php" class="btn " >Hủy</a>
+      <a href="dashboard.php" class="btn " >Hủy</a>
     </form>
   </div>
 </body>
 </html>
+<!--  -->
