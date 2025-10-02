@@ -5,28 +5,25 @@ body {
   color: #333;
 }
 .hero {
-  background: url("../pic/bnhlv.jpg") no-repeat center center;
-  background-size: cover;
-  background: linear-gradient(rgba(106, 97, 93, 0.5), rgba(106, 97, 93, 0.5)),
-    url("../pic/bnhlv.jpg") center/cover no-repeat;
+  background: url("../pic/bnhlv.jpg") center/cover no-repeat;
 }
-
 .banner {
   color: #fff;
   padding: 80px 20px;
 }
 .banner h1 {
-  margin: 0;
-  font-size: 42px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
   font-weight: bold;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
 }
 
 .search-box {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .sidebar {
   background-color: white;
   padding: 20px;
@@ -54,8 +51,9 @@ body {
   height: 100%;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s;
+  border-radius: 10px;
 }
 .post-card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.02); /* phóng to card*/
 }
 /* 1 */
