@@ -22,10 +22,10 @@
             <div class="dau">
                 <h4 >GIỚI THIỆU KHÓA HỌC</h4>
             <p >
-                Khóa đào tạo IMP (STOTT PILATES ® Intensive Mat-Plus ™ khóa đào tạo giáo viên thảm Pilates Cơ bản và Trung Cấp của STOTT PILATES®)
+                Khóa đào tạo IMP (MAPLE PILATES Intensive Mat-Plus ™ khóa đào tạo giáo viên thảm Pilates Cơ bản và Trung Cấp của MAPLE PILATES)
                 <br>
                 
-                Khóa học này dành cho những ai đang làm việc trong lĩnh vực thể dục hoặc vận động, cũng như những ai muốn được đào tạo bài bản để trở thành Huấn luyện viên dạy thảm Pilates. Dựa trên những kiến thức của bạn về thể dục và vận động, khóa học được thiết kế trình độ cơ bản và trung cấp STOTT PILATES® giáo viên thảm để bạn có thể thiết kế những bài tập cho cả nhân hoặc nhóm phù hợp với đa dạng khách hàng. Bạn sẽ có kiến thức nền tảng vững chắc và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates thảm hiệu quả nhất cho học viên.
+                Khóa học này dành cho những ai đang làm việc trong lĩnh vực thể dục hoặc vận động, cũng như những ai muốn được đào tạo bài bản để trở thành Huấn luyện viên dạy thảm Pilates. Dựa trên những kiến thức của bạn về thể dục và vận động, khóa học được thiết kế trình độ cơ bản và trung cấp MAPLE PILATES giáo viên thảm để bạn có thể thiết kế những bài tập cho cả nhân hoặc nhóm phù hợp với đa dạng khách hàng. Bạn sẽ có kiến thức nền tảng vững chắc và những kỹ năng cần thiết để thiết kế và vận hành những lớp Pilates thảm hiệu quả nhất cho học viên.
                 <br>
                 Địa điểm: 
                 <br>
@@ -44,14 +44,14 @@
                     <h4>
                                 TẠI SAO CHỌN
                                 <br>
-                        STOTT PILATES® - Merrithew
+                        MAPLE PILATES - Merrithew
                     </h4>
                     <p>
                     <li>Merrithew ® là công ty hàng đầu trong lĩnh vực vận động chánh niệm, đã đào tạo hơn 70,000 học viên trên trên toàn cầu.</li>
-                    <li>Phương pháp đào tạo của STOTT PILATES® là độc nhất vô nhị, vô song trong ngành về tính kỹ lưỡng và chất lượng.</li>
-                    <li>STOTT PILATES® được công nhận toàn cầu về chất lượng đào tạo, đáp ứng được nhu cầu tập luyện của tất cả khách hàng từ phục hồi chức năng đến vận động viên chuyên nghiệp.</li>
+                    <li>Phương pháp đào tạo của MAPLE PILATES là độc nhất vô nhị, vô song trong ngành về tính kỹ lưỡng và chất lượng.</li>
+                    <li>MAPLE PILATES được công nhận toàn cầu về chất lượng đào tạo, đáp ứng được nhu cầu tập luyện của tất cả khách hàng từ phục hồi chức năng đến vận động viên chuyên nghiệp.</li>
                     <li>Chương trình đào tạo theo Modul học viên có thể tham gia khóa học từng phần, ví dụ có thể lựa chọn Mat, Refomer, hoặc có thể đạt luôn chứng nhận toàn bộ chương trình.</li>
-                    <li>Với chương trình đào tạo STOTT PILATES® bạn sẽ có nhiều cơ hội việc làm hơn khi được tiếp nhận chất lượng đào tạo và chứng chỉ toàn toàn cầu.</li>
+                    <li>Với chương trình đào tạo MAPLE PILATES bạn sẽ có nhiều cơ hội việc làm hơn khi được tiếp nhận chất lượng đào tạo và chứng chỉ toàn toàn cầu.</li>
                     
                     </p>
 
@@ -70,13 +70,13 @@
        <div class="col-md-8 offset-md-2
                         text-center">
            <div class="dau">
-                <h4>về PĀRAGATE®</h4>
+                <h4>về MAPLE PILATES</h4>
         <p>
             PĀRAGATE® Yoga & Pilates là trung tâm đào tạo  Pilates chuyên nghiệp.
             <br>
             Các khóa đào tạo của chúng tôi được phân cấp từ cơ bản đến nâng cao để phù hợp với trình độ của người tập.
             Thêm vào đó, PĀRAGATE® Yoga & Pilates còn là địa chỉ đào tạo HLV Pilates quốc tế đầu tiên
-            có chứng chỉ toàn cầu của STOTT PILATES®  Merrithew tại Việt Nam.
+            có chứng chỉ toàn cầu của MAPLE PILATES  Merrithew tại Việt Nam.
         </p>
            </div>
        </div>

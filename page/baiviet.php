@@ -31,7 +31,7 @@
                 <button class="btn btn-outline-primary" type="submit" name="btn">
                     <img src="../pic/search1.png" 
                         alt="search" 
-                        class="img-fluid" 
+                        class="img-fluid timkiemnut" 
                         style="width: 30px; height: 30px;">
                 </button>
             </div>
