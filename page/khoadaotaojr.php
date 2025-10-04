@@ -43,9 +43,9 @@
             <div class="row">
                 <div class="col-md-6">
                     <h4>
-                                TẠI SAO CHỌN
-                                <br>
-                        STOTT PILATES® - Merrithew
+                        TẠI SAO CHỌN
+                        <br>
+                        MAPLE PILATES - Merrithew
                     </h4>
                     <p>
                     <li>Merrithew ® là công ty hàng đầu trong lĩnh vực vận động chánh niệm, đã đào tạo hơn 70,000 học viên trên trên toàn cầu.</li>
@@ -58,7 +58,7 @@
 
                 </div>
             
-            <div class="col-md-6 delay-2">
+            <div class="col-md-6">
             <img src="../pic/khoadaotaojr.png" 
             alt="khoadaotaojr"
             class="img-fluid"
@@ -71,13 +71,13 @@
         <div class="col-md-8 offset-md-2
                         text-center">
            <div class="dau">
-                <h4>về PĀRAGATE®</h4>
+                <h4>về MAPLE PILATES</h4>
         <p>
             PĀRAGATE Yoga & Pilates là trung tâm đào tạo  Pilates chuyên nghiệp.
             <br>
             Các khóa đào tạo của chúng tôi được phân cấp từ cơ bản đến nâng cao để phù hợp với trình độ của người tập.
             Thêm vào đó, PĀRAGATE® Yoga & Pilates còn là địa chỉ đào tạo HLV Pilates quốc tế đầu tiên
-            có chứng chỉ toàn cầu của STOTT PILATES®  Merrithew tại Việt Nam.
+            có chứng chỉ toàn cầu của MAPLE PILATES  Merrithew tại Việt Nam.
         </p>
            </div>
        </div>
@@ -163,3 +163,4 @@
 
 </html>
 <?php include 'footer.php' ?>
+<!--  -->
