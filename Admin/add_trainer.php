@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
       <label>Chuyên môn</label>
       <input type="text" name="certifications" required>
 
-      <label>Kinh nghiệm (năm)</label>
+      <label>Kinh nghiệm</label>
       <input type="text" name="experience" required>
 
       <label>Tiểu sử</label>
