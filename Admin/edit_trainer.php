@@ -44,7 +44,7 @@ if (isset($_POST['update'])) {
     <title>Sửa Huấn luyện viên</title>
     <style>
         body {
-            background-color:  #73dc7cff;
+            background-color: rgba(142, 214, 142, 1);
             display: flex;
             justify-content: center;
             align-items: center;
@@ -104,11 +104,11 @@ if (isset($_POST['update'])) {
             background: #aaa;
         }
         .btn-primary {
-            background: #39b058ff;
+            background: #66a777ff;
             color: #fff;
         }
         .btn-primary:hover {
-            background: #42ce59ff;
+            background: #3fe785ff;
         }
     </style>
 </head>
