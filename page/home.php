@@ -272,28 +272,39 @@ mysqli_set_charset($conn, 'UTF8'); ?>
       <div class="layout-grid">
         <div class="layout-left">
           <img src="../pic/nentap.jpg" alt="Pilates lớn">
-          <div class="caption">Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</div>
+          <div class="caption">
+            <a href="baiviet.php">Nên tập Pilates vào lúc nào để đạt hiệu quả cao nhất?</a>
+
+          </div>
         </div>
 
         <div class="layout-right">
           <div class="top-right">
             <img src="../pic/visao.jpg" alt="Pilates nhỏ trên">
-            <div class="caption">Một buổi đào tạo HLV Pilates diễn ra thế nào?</div>
+            <div class="caption">
+              <a href="baiviet.php">Một buổi đào tạo HLV Pilates diễn ra thế nào? </a>
+
+            </div>
           </div>
           <div class="bottom-right">
             <div class="bottom-card">
               <img src="../pic/visao2.jpg" alt="Pilates nhỏ dưới 1">
-              <div class="caption">Vì sao dân văn phòng nên tập Pilates?</div>
+              <div class="caption">
+                <a href="baiviet.php">Vì sao dân văn phòng nên tập Pilates?</a>
+
+              </div>
             </div>
             <div class="bottom-card">
               <img src="../pic/visao3.jpg" alt="Pilates nhỏ dưới 2">
-              <div class="caption">Mất bao lâu để trở thành huấn luyện viên Pilates?</div>
+              <div class="caption">
+                <a href="baiviet.php">Mất bao lâu để trở thành huấn luyện viên Pilates?</a>
+
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
   </section>
 
   <!-- Quote Slider -->
@@ -337,7 +348,8 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           Khóa học này dành cho những ai đang làm việc trong lĩnh vực thể dục hoặc vận động,
           cũng như những ai muốn được đào tạo bài bản để trở thành Huấn luyện viên dạy thảm Pilates.
         </p>
-        <button class="btn-learn">Xem thêm</button>
+        <button class="btn-learn">
+          <a href="khoadaotaojr.php">Xem thêm </a> </button>
       </div>
     </div>
 
@@ -354,7 +366,8 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           Khóa học này dành cho những ai đang làm việc trong lĩnh vực thể dục hoặc vận động,
           cũng như những ai muốn được đào tạo bài bản để trở thành Huấn luyện viên dạy máy Reformer Pilates.
         </p>
-        <button class="btn-learn">Xem thêm</button>
+        <button class="btn-learn">
+          <a href="khoadaotaoipm.php">Xem thêm </a> </button>
       </div>
     </div>
 
@@ -372,7 +385,8 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           Chương trình gồm 3 modules:
           <strong>Intensive Cadillac (ICAD), Intensive Stability Chair™ (ICHR), Intensive Barrels (IBRL)</strong>.
         </p>
-        <button class="btn-learn">Xem thêm</button>
+        <button class="btn-learn">
+          <a href="daotaoCPP.php">Xem thêm </a> </button>
       </div>
     </div>
 
@@ -390,7 +404,8 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         <p>
           Chương trình <strong>Gyrotonic Foundation</strong> dành cho những ai mong muốn làm việc trong lĩnh vực thể dục, vận động và quan tâm đến bộ môn phù hợp cho mọi lứa tuổi, với nhiều thể trạng và bệnh lý khác nhau.
         </p>
-        <button class="btn-learn">Xem thêm</button>
+        <button class="btn-learn">
+          <a href="khoadaotaoipm.php">Xem thêm </a> </button>
       </div>
     </div>
   </section>

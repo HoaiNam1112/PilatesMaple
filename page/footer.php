@@ -113,7 +113,7 @@
       <h4>VỀ CHÚNG TÔI</h4>
       <ul>
         <li><a href="../page/home.php">Giới Thiệu</a></li>
-        <li><a href="../page/shcedule.php">Lịch học</a></li>
+        <li><a href="../page/schedule.php">Lịch học</a></li>
         <li><a href="../page/lienhe.php">Liên hệ</a></li>
       </ul>
     </div>

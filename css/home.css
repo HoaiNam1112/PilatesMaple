@@ -494,7 +494,7 @@
   bottom: 15px;
   left: 15px;
   right: 15px;
-  color: #fff;
+  color: #f6f6f6;
   font-size: 1.3em;
   /* chữ to hơn */
   font-weight: 650;
@@ -507,6 +507,17 @@
   /* không cần nền đen nữa */
 }
 
+.caption a {
+  color: #fff;
+  /* chữ trắng */
+  text-decoration: none;
+  /* bỏ gạch chân */
+}
+
+.caption a:hover {
+  text-decoration: underline;
+  /* khi hover mới hiện gạch chân */
+}
 
 .layout-left:hover .caption,
 .top-right:hover .caption,
