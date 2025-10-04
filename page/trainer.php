@@ -25,8 +25,16 @@ if ($conn->connect_error) {
   </div>
 </div>
 
+<div class="trainer-video">
+  <video width="100%" controls autoplay muted loop>
+    <source src="../pic/gioithieu.mp4" type="video/mp4">
+    Trình duyệt của bạn không hỗ trợ video.
+  </video>
+</div>
+
   <div class="team-photo">
     <img src="../pic/team.jpg" alt="Đội ngũ huấn luyện viên">
+    <p class="team-caption">Đội ngũ huấn luyện viên tận tâm và giàu kinh nghiệm tại Maple Pilates.</p>
   </div>
 
   <div class="trainer-grid">

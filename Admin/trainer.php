@@ -13,7 +13,7 @@ $result = $conn->query($sql);
   <meta charset="UTF-8">
   <title>Quản lý Huấn luyện viên</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../css/admin.css?v=2" />
+  <link rel="stylesheet" href="../css/admin.css" />
   <style>
     .btn-add {
       display: inline-block;
@@ -27,21 +27,6 @@ $result = $conn->query($sql);
     }
     .btn-add:hover { background-color: #218838; }
     .btn-add i { margin-right: 6px; }
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-    }
-    th, td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-    }
-    th {
-      background-color: #333;
-      color: white;
-    }
     tr:nth-child(even) { background-color: #f9f9f9; }
     tr:hover { background-color: #f1f1f1; }
 

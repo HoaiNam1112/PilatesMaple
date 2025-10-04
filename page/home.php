@@ -163,7 +163,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         <div class="pp-flipbox-back">
           <h3>YOGA THẢM</h3>
           <p>Lớp Yoga tập trung vào việc thực hành các tư thế Yoga truyền thống, phương pháp thở và sự chú tâm.</p>
-          <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+          <a href="../page/schedule.php">Xem lịch tập</a>
         </div>
       </div>
     </div>
@@ -179,7 +179,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           <h3>YOGA BAY</h3>
           <p>
             Yoga Bay là các động tác Yoga được ứng dụng cùng dải dây lụa được treo lên từ độ cao khoảng 3m. </p>
-          <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+          <a href="../page/schedule.php">Xem lịch tập</a>
         </div>
       </div>
     </div>
@@ -194,7 +194,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         <div class="pp-flipbox-back">
           <h3>PILATES THẢM</h3>
           <p> Các lớp Pilates tập trung vào sự phối hợp của toàn bộ cơ thể. </p>
-          <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+          <a href="../page/schedule.php">Xem lịch tập</a>
         </div>
       </div>
     </div>
@@ -209,7 +209,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
         <div class="pp-flipbox-back">
           <h3>PILATES REFORMER</h3>
           <p>Các lớp Pilates kết hợp sử dụng máy Pilates Reformer. </p>
-          <a href="/lich-tap-tai-paragate/">Xem lịch tập</a>
+          <a href="../page/schedule.php">Xem lịch tập</a>
         </div>
       </div>
     </div>
@@ -407,7 +407,7 @@ mysqli_set_charset($conn, 'UTF8'); ?>
           }
         });
       }, {
-        threshold: 0.2
+        threshold: 0.9
       });
 
       elements.forEach(el => observer.observe(el));

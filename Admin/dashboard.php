@@ -8,9 +8,8 @@ include 'sidebar.php';
 <head>
   <meta charset="UTF-8">
   <title>Admin Dashboard</title>
-  <link rel="stylesheet" href="../css/admin.css?v=2" />
+  <link rel="stylesheet" href="../css/admin.css" />
   <style>
-    /* Main */
     .main {
       margin-left: 220px;
       padding: 20px;
@@ -52,18 +51,17 @@ include 'sidebar.php';
       color: white;
     }
     .btn-add:hover { background: #14834d; }
-   .btn-edit {
-  color: #ab102c;
-  border-radius: 5px; 
-  text-decoration :none;
-}
+    .btn-edit {
+      color: #ab102c;
+      border-radius: 5px; 
+      text-decoration :none;
+    }
     .btn-update:hover { background: #217dbb; }
-   .btn-delete {
-
-  color: #dfc710ff;
- border-radius: 1px; 
-   text-decoration :none;
-}
+    .btn-delete {
+      color: #dfc710ff;
+      border-radius: 1px; 
+      text-decoration :none;
+    }
     .btn-delete:hover { background: darkred; }
   </style>
 </head>
