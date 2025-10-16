@@ -13,37 +13,20 @@ mysqli_set_charset($conn, 'UTF8');
 </head>
 
 <body>
+  <div class="banner">
+    <div class="banner-overlay"></div>
+    <img src="../pic/young.jpg" alt="Banner Huấn Luyện Viên">
 
-  <section class="so1">
-    <div class="container">
-      <div class="row align-items-center">
-
-        <!-- Cột chữ bên trái -->
-        <div class="col-md-6">
-          <div class="banner-content text-start">
-            <h1 class="banner-title animate-text">Khóa Đào Tạo</h1>
-            <p class="banner-subtitle animate-text delay-1">
-              STOTT PILATES ® Intensive Cadillac, Chair & Barrels (ICCB) Bởi Merrithew ®
-            </p>
-            <h3 class="banner-footer animate-text delay-2">
-              Từ STOTT PILATES® - Số 1 Thế Giới
-            </h3>
-          </div>
-        </div>
-
-        <!-- Cột ảnh bên phải -->
-        <div class="col-md-6 text-center">
-          <img src="../pic/trainner-shadow.png"
-            alt="trainer"
-            class="img-fluid trainer-img">
-        </div>
-
-      </div>
+    <div class="banner-content">
+      <h1 class="banner-title animate-text">Khóa Đào Tạo</h1>
+      <p class="banner-subtitle animate-text delay-1">
+        STOTT PILATES® Intensive Cadillac, Chair & Barrels (ICCB) 2024
+      </p>
+      <h3 class="banner-footer animate-text delay-2">
+        Từ STOTT PILATES® - Số 1 Thế Giới
+      </h3>
     </div>
-  </section>
-
-
-
+  </div>
 
 
   <section class="course-wrapper">

@@ -1,6 +1,5 @@
 <?php
 session_start();
-include 'check_admin.php';
 include '../page/connect.php';
 include 'sidebar.php';
 

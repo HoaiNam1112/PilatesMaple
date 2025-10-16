@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   <title>Thêm Huấn luyện viên</title>
   <style>
     body {
-      background-color: #73dc7cff;
+      background-color: #f5f5dc;
       font-family: Arial, sans-serif;
     }
     .container {
